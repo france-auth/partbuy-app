@@ -1,4 +1,4 @@
-// components/ImageButton.tsx
+ // components/ImageButton.tsx
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -14,7 +14,7 @@ interface ButtonProps {
   quality?: number;
   className?: string;
 }
-
+/*
 const Button: React.FC<ButtonProps> = ({
   name,
   src,
@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const buttonContent = (
     <div className={`flex w-full justify-center items-center space-x-2 ${className}`}>
-      <p className='flex items-center mt-[1px]'>{name}</p>
+      <p className='flex items-center'>{name}</p>
       {src && <Image src={src} alt={alt} width={width} height={height} quality={quality} className='flex items-center' />}
     </div>
   );
@@ -39,7 +39,49 @@ const Button: React.FC<ButtonProps> = ({
       {buttonContent}
     </Link>
   ) : (
-    <button type='button' onClick={onClick} className="">
+    <button type='button' onClick={onClick} className="w-full">
+      {buttonContent}
+    </button>
+  );
+};
+
+export default Button;
+ */
+
+
+const Button: React.FC<ButtonProps> = ({
+  name,
+  src,
+  alt = 'button image',
+  onClick,
+  link,
+  width,
+  height,
+  quality,
+  className = '',
+}) => {
+  const buttonContent = (
+    <div className={`flex w-full justify-center items-center space-x-2`}>
+      <p className="flex items-center">{name}</p>
+      {src && (
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          quality={quality}
+          className="flex items-center"
+        />
+      )}
+    </div>
+  );
+
+  return link ? (
+    <Link href={link} className={`w-full ${className}`}>
+      {buttonContent}
+    </Link>
+  ) : (
+    <button type="button" onClick={onClick} className={`w-full ${className}`}>
       {buttonContent}
     </button>
   );

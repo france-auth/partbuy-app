@@ -28,4 +28,7 @@
   .border-gradient {
     @apply border-[#3246DA]
   }
+  .box {
+    @apply bg-[#121212] xx:p-4 xr:p-5 flex flex-col
+  }
 }
