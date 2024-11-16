@@ -9,6 +9,7 @@
   font-family: --font-roboto;
 }
 
+
 .text-gradient {
     background: linear-gradient(90deg, #3246DA 0%, #223BFE 100%);
     -webkit-background-clip: text;
@@ -23,12 +24,8 @@
     font-family: var(--font-montserrat);
 }
 
-
 @layer utilities {
-  .border-gradient {
-    @apply border-[#3246DA]
-  }
   .box {
-    @apply bg-[#121212] xx:p-4 xr:p-5 flex flex-col
+    @apply bg-[#121212] p-5 flex flex-col w-full
   }
 }

@@ -61,7 +61,7 @@ const Button: React.FC<ButtonProps> = ({
   className = '',
 }) => {
   const buttonContent = (
-    <div className={`flex w-full justify-center items-center space-x-2`}>
+    <div className={`flex w-full justify-center items-center space-x-2 text-color`}>
       <p className="flex items-center">{name}</p>
       {src && (
         <Image

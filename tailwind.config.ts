@@ -21,6 +21,7 @@ export default {
       },
       backgroundImage: {
         'custom-gradient': 'linear-gradient(90deg, rgba(255, 221, 85, 0.1) 0%, rgba(255, 144, 75, 0.4) 74.91%, #223BFE 100%)',
+        'border-gradient': 'linear-gradient(90deg, #3246DA 0%, #223BFE 100%)',
       },
     },
   },

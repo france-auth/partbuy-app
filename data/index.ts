@@ -37,3 +37,84 @@ export const dashboardButtons: dashboardButtonsProps[] = [
     img: "/dashboard/join-auction.svg"
   },
 ]
+
+interface propertiesProps {
+  name: string;
+  value: string;
+  price: string;
+  listImg: string;
+  gridImg: string;
+}
+
+export const properties: propertiesProps[] = [
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properti/properties-grid.svg",
+    name: "Property A",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties//properties-grid.svg",
+    name: "Property B",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties/properties-grid.svg",
+    name: "Property C",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties/properties-grid.svg",
+    name: "Property D",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties/properties-grid.svg",
+    name: "Property E",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties/properties-grid.svg",
+    name: "Property F",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties/properties-grid.svg",
+    name: "Property G",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties/properties-grid.svg",
+    name: "Property H",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties/properties-grid.svg",
+    name: "Property I",
+    value: 'Asset Value',
+    price: '$150'
+  },
+  {
+    listImg: "/properties/properties-list.svg",
+    gridImg: "/properties/properties-grid.svg",
+    name: "Property J",
+    value: 'Asset Value',
+    price: '$150'
+  },
+]
