@@ -2,7 +2,6 @@
 interface DashboardProps {
   text: string;
   value: string;
-
 }
 export const dashbordcards: DashboardProps[] = [
   {
@@ -19,6 +18,22 @@ export const dashbordcards: DashboardProps[] = [
   },
 ]
 
-export const dashboardButtons = [
-  
+interface dashboardButtonsProps {
+  name: string;
+  img: string;
+}
+
+export const dashboardButtons: dashboardButtonsProps[] = [
+  {
+    name: "buy property",
+    img: "/dashboard/buy-property.svg"
+  },
+  {
+    name: "sell property",
+    img: "/dashboard/sell-property.svg"
+  },
+  {
+    name: "join auction",
+    img: "/dashboard/join-auction.svg"
+  },
 ]

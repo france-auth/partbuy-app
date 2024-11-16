@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const buttonContent = (
     <div className={`flex w-full justify-center items-center space-x-2 ${className}`}>
-      <p className='flex items-center place-self-center mt-[1px]'>{name}</p>
+      <p className='flex items-center mt-[1px]'>{name}</p>
       {src && <Image src={src} alt={alt} width={width} height={height} quality={quality} className='flex items-center' />}
     </div>
   );
@@ -36,7 +36,7 @@ const Button: React.FC<ButtonProps> = ({
   // Render a link if provided; otherwise, render a button
   return link ? (
     <Link href={link}>
-      <a>{buttonContent}</a>
+      {buttonContent}
     </Link>
   ) : (
     <button type='button' onClick={onClick} className="">
