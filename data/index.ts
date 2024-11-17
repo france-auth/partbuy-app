@@ -49,7 +49,7 @@ interface propertiesProps {
 export const properties: propertiesProps[] = [
   {
     listImg: "/properties/properties-list.svg",
-    gridImg: "/properti/properties-grid.svg",
+    gridImg: "/properties/properties-grid.svg",
     name: "Property A",
     value: 'Asset Value',
     price: '$150'
