@@ -3,7 +3,7 @@ interface DashboardProps {
   text: string;
   value: string;
 }
-export const dashbordcards: DashboardProps[] = [
+export const dashboardcards: DashboardProps[] = [
   {
     text: "Total Asset Value",
     value: "$300,000"
@@ -118,3 +118,4 @@ export const properties: propertiesProps[] = [
     price: '$150'
   },
 ]
+

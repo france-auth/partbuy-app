@@ -1,10 +1,11 @@
 'use client'
 
-import { dashboardButtons, dashbordcards } from "@/data";
+import { dashboardButtons, dashboardcards } from "@/data";
 import Button from "./ui/Button";
 import Image from "next/image";
-import { useState } from "react";
+import React, { useState } from "react";
 import { properties } from "@/data";
+import Navbar from "./Navbar";
 
 const Dashboard = () => {
   const [toggleIcon, setToggleIcon] = useState<string>('list');
@@ -13,7 +14,7 @@ const Dashboard = () => {
   };
   
   return (
-    <main className="flex flex-col w-full min-h-screen relative p-5 items-center gap-3">
+    <main className="flex flex-col w-full min-h-screen relative p-5 items-center gap-3 pb-20">
       <div className="px-4 py-2 w-screen bg-[#121212]">
         <p className="roboto font-bold text-gradient text-base leading-[18.75px]">
           Dashboard
@@ -31,7 +32,7 @@ const Dashboard = () => {
           />
         </div>
         <div className="grid grid-cols-2 w-full justify-center montserrat gap-2 p-2 xr:p-3">
-          {dashbordcards.map(({text, value}, id) => (
+          {dashboardcards.map(({text, value}, id) => (
             <div 
               key={id} 
               className={`space-y-1 justify-items-center rounded-xl py-7 px-2 bg-[#FFFFFF1A] 
@@ -138,6 +139,7 @@ const Dashboard = () => {
             ))}
           </div>
         </div>
+      <Navbar />
     </main>
   )
 };
