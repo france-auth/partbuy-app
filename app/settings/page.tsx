@@ -1,14 +1,14 @@
 import Navbar from "@/components/Navbar";
 
-const Marketplace = () => {
+const Settings = () => {
   return (
     <main className="page">
       <div className="sub-page">
-        <h1>MARKETPLACE</h1>
+        <h1>SETTINGS</h1>
       </div>
       <Navbar />
     </main>
   )
 }
 
-export default Marketplace;
+export default Settings;
