@@ -119,3 +119,12 @@ export const properties: propertiesProps[] = [
   },
 ]
 
+interface AnalyticsProps {
+  heading: string;
+  img: string;
+}
+
+export const analytics: AnalyticsProps[] = [
+  {heading: "Total Assets Value", img: "/dashboard/analytics.svg"},
+  {heading: "Properties Owned", img: "/dashboard/analytics.svg"},
+]
