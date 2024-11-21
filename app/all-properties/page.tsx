@@ -1,76 +1,25 @@
 'use client'
 
-import { dashboardButtons, dashboardcards } from "@/data";
-import Button from "./ui/Button";
 import Image from "next/image";
 import React, { useState } from "react";
 import { properties } from "@/data";
-import Navbar from "./Navbar";
-import Header from "./Header";
+import Header from "@/components/Header";
+import Button from "@/components/ui/Button";
 
-const Dashboard = () => {
+const AllProperties = () => {
   const [toggleIcon, setToggleIcon] = useState<string>('list');
   const toggle = () => {
     setToggleIcon((prevIcon) => (prevIcon === 'list' ? 'grid' : 'list'));
   };
-  
   return (
     <main className="page">
-      <Header name="Dashboard" />
-      <div className="page-body">
-        <div className="w-full flex justify-between items-center px-2 xr:p-3">
-          <p className="top-text">
-            portfolio summary
-          </p>
-          <Button
-            name="view analytics"
-            link="/analytics-overview"
-            className="property-button border-gradient"
-          />
-        </div>
-        <div className="grid grid-cols-2 w-full justify-center montserrat gap-2 p-2 xr:p-3">
-          {dashboardcards.map(({text, value}, id) => (
-            <div 
-              key={id} 
-              className={`space-y-1 justify-items-center rounded-xl py-7 px-2 bg-[#FFFFFF1A] 
-              ${id === 0 ? 'col-span-2' : ''}`}
-            >
-              {id !== 0 ? null : (
-                <p className="xx:text-[10px] xr:text-xs text-[#2ECC71] leading-[12.19px] font-semibold mb-3">+10% increase</p>
-              )}
-              <p className="xx:text-[10px] xr:text-xs leading-[12.19px] font-semibold">{text}</p>
-              <p className="xx:text-[22px] xr:text-2xl leading-[24.38px] font-extrabold">{value}</p>
-            </div>
-          ))}
-        </div>
-        <div className="w-full grid grid-cols-2 gap-3 px-2 xr:px-3 montserrat mt-2">
-          {dashboardButtons.map(({ name, img }, id) => (
-            <Button
-              key={id}
-              name={name}
-              src={img}
-              alt={name}
-              width={id === 1 ? 9 : 15}
-              height={id === 1 ? 9 : 15}
-              link=""
-              className={`px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] xx:text-[8px] xr:text-[10px] leading-[12.19px] uppercase font-bold ${
-                id === 2 ? 'col-span-2' : ''
-              }`}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="box roboto mt-2 gap-2">
+        <Header name="Available Properties" />
+        <div className="box roboto mt-2 gap-2">
           <div className="flex items-center justify-between">
-            <p className="uppercase xx:text-[10px] xr:text-xs font-bold text-color">
-              top properties
+            <p className="top-text">
+              all available properties
             </p>
             <div className="flex gap-1 justify-between">
-              <Button
-                name="view all properties"
-                link="/all-properties"
-                className="property-button border-gradient"
-              />
               <div className='w-6 h-6 flex justify-end items-center'>
                 <Image 
                   src={toggleIcon === 'list' ? '/dashboard/list.svg' 
@@ -103,22 +52,21 @@ const Dashboard = () => {
                   ? 'grid col-span-1 gap-2' 
                   : toggleIcon === 'grid' 
                     ? 'flex gap-2 items-center' 
-                    : 'grid col-span-1 gap-2'} 
-                  ${id > 3 ? 'hidden' : ''}`}>
+                    : 'grid col-span-1 gap-2'}`}>
                 <Image 
                   src={toggleIcon === 'list' ? gridImg 
                     : toggleIcon === 'grid' ? listImg 
                     : gridImg} 
-                  alt="name" 
+                  alt="name"
                   width={1} 
                   height={1} 
                   className={`${toggleIcon === 'list' ? 'w-full h-auto' 
                     : toggleIcon === 'grid' ? 'w-20 h-auto' 
                     : 'w-full h-auto'}`}
                 />
-                <div className={`${toggleIcon === 'list' ? 'space-y-2' 
+                <div className={`${toggleIcon === 'list' ? 'flex flex-col gap-2 items-center justify-center' 
                   : toggleIcon === 'grid' ? 'flex w-full justify-between' 
-                  : 'space-y-2'}`
+                  : 'flex flex-col gap-2 items-center justify-center'}`
                 }>
                   <p className="font-bold xx:text-[14px] xr:text-[15px] leading-[17.58px]">
                     {name}
@@ -136,9 +84,17 @@ const Dashboard = () => {
             ))}
           </div>
         </div>
-      <Navbar />
+        <Button
+          name="back to dashboard"
+          src={'/dashboard/join-auction.svg'}
+          alt={'dashboard button'}
+          width={15}
+          height={15}
+          link="/"
+          className={`mt-5 roboto px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] xx:text-[8px] xr:text-[10px] leading-[12.19px] uppercase font-bold`}
+        />
     </main>
   )
-};
+}
 
-export default Dashboard;
+export default AllProperties;
