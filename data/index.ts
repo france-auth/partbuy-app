@@ -3,7 +3,7 @@ interface DashboardProps {
   text: string;
   value: string;
 }
-export const dashbordcards: DashboardProps[] = [
+export const dashboardcards: DashboardProps[] = [
   {
     text: "Total Asset Value",
     value: "$300,000"
@@ -117,4 +117,14 @@ export const properties: propertiesProps[] = [
     value: 'Asset Value',
     price: '$150'
   },
+]
+
+interface AnalyticsProps {
+  heading: string;
+  img: string;
+}
+
+export const analytics: AnalyticsProps[] = [
+  {heading: "Total Assets Value", img: "/dashboard/analytics.svg"},
+  {heading: "Properties Owned", img: "/dashboard/analytics.svg"},
 ]
