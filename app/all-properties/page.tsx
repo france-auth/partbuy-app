@@ -5,12 +5,19 @@ import React, { useState } from "react";
 import { properties } from "@/data";
 import Header from "@/components/Header";
 import Button from "@/components/ui/Button";
+import { useRouter } from "next/navigation";
 
 const AllProperties = () => {
   const [toggleIcon, setToggleIcon] = useState<string>('list');
   const toggle = () => {
     setToggleIcon((prevIcon) => (prevIcon === 'list' ? 'grid' : 'list'));
   };
+
+  const router = useRouter(); // Call unconditionally
+  const handleCardClick = (id: number) => {
+    router.push(`/properties/${id}`); // Navigate to the property details page
+  };
+
   return (
     <main className="page">
         <Header name="Available Properties" />
@@ -48,6 +55,7 @@ const AllProperties = () => {
             {properties.map(({name, value, price, listImg, gridImg}, id) => (
               <div 
                 key={id} 
+                onClick={() => handleCardClick(id + 1)}
                 className={`${toggleIcon === 'list' 
                   ? 'grid col-span-1 gap-2' 
                   : toggleIcon === 'grid' 
@@ -61,7 +69,7 @@ const AllProperties = () => {
                   width={1} 
                   height={1} 
                   className={`${toggleIcon === 'list' ? 'w-full h-auto' 
-                    : toggleIcon === 'grid' ? 'w-20 h-auto' 
+                    : toggleIcon === 'grid' ? 'w-24 h-auto' 
                     : 'w-full h-auto'}`}
                 />
                 <div className={`${toggleIcon === 'list' ? 'flex flex-col gap-2 items-center justify-center' 
