@@ -6,6 +6,7 @@ import { properties } from "@/data";
 import Header from "@/components/Header";
 import Button from "@/components/ui/Button";
 import { useRouter } from "next/navigation";
+import Navbar from "@/components/Navbar";
 
 const AllProperties = () => {
   const [toggleIcon, setToggleIcon] = useState<string>('list');
@@ -101,6 +102,7 @@ const AllProperties = () => {
           link="/"
           className={`mt-5 roboto px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] xx:text-[8px] xr:text-[10px] leading-[12.19px] uppercase font-bold`}
         />
+      <Navbar />
     </main>
   )
 }

@@ -7,11 +7,17 @@ import React, { useState } from "react";
 import { properties } from "@/data";
 import Navbar from "./Navbar";
 import Header from "./Header";
+import { useRouter } from "next/navigation";
 
 const Dashboard = () => {
   const [toggleIcon, setToggleIcon] = useState<string>('list');
   const toggle = () => {
     setToggleIcon((prevIcon) => (prevIcon === 'list' ? 'grid' : 'list'));
+  };
+
+  const router = useRouter(); // Call unconditionally
+  const handleCardClick = (id: number) => {
+    router.push(`/properties/${id}`); // Navigate to the property details page
   };
   
   return (
@@ -99,6 +105,7 @@ const Dashboard = () => {
             {properties.map(({name, value, price, listImg, gridImg}, id) => (
               <div 
                 key={id} 
+                onClick={() => handleCardClick(id + 1)}
                 className={`${toggleIcon === 'list' 
                   ? 'grid col-span-1 gap-2' 
                   : toggleIcon === 'grid' 
