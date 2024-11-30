@@ -67,7 +67,7 @@ const ProfileForm: React.FC = () => {
             id="edit-name"
             name="edit-name"
             placeholder="John Doe"
-            className="w-full px-4 py-4 bg-[#D9D9D933] border border-blue-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#B0B0B0] text-[10px] leading-[12.19px] font-bold"
+            className="w-full px-4 py-4 bg-[#D9D9D933] border border-[#3246DA] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3246DA] text-[#B0B0B0] text-[10px] leading-[12.19px] font-bold"
           />
         </div>
 
@@ -81,7 +81,7 @@ const ProfileForm: React.FC = () => {
             id="email-address"
             name="email-address"
             placeholder="johndoe@gmail.com"
-            className="w-full px-4 py-4 bg-[#D9D9D933] border border-blue-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#B0B0B0] text-[10px] leading-[12.19px] font-bold"
+            className="w-full px-4 py-4 bg-[#D9D9D933] border border-[#3246DA] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3246DA] text-[#B0B0B0] text-[10px] leading-[12.19px] font-bold"
           />
         </div>
 
@@ -95,7 +95,7 @@ const ProfileForm: React.FC = () => {
             id="phone-number"
             name="phone-number"
             placeholder="815625625626"
-            className="w-full px-4 py-4 bg-[#D9D9D933] border border-blue-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-[#B0B0B0] text-[10px] leading-[12.19px] font-bold"
+            className="w-full px-4 py-4 bg-[#D9D9D933] border border-[#3246DA] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#3246DA] text-[#B0B0B0] text-[10px] leading-[12.19px] font-bold"
           />
         </div>
         <Button
