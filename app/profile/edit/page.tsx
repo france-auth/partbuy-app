@@ -30,7 +30,7 @@ const ProfileForm: React.FC = () => {
               <div className="w-[31px] h-[31px] rounded-full bg-[#D9D9D913] flex items-center justify-center">
                 {profilePicture ? (
                   <Image
-                    src={'/profile/smallpfp.svg'}
+                    src={profilePicture}
                     alt="pfp"
                     width={1}
                     height={1}
