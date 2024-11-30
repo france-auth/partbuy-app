@@ -42,7 +42,9 @@ const Dashboard = () => {
               ${id === 0 ? 'col-span-2' : ''}`}
             >
               {id !== 0 ? null : (
-                <p className="xx:text-[10px] xr:text-xs text-[#2ECC71] leading-[12.19px] font-semibold mb-3">+10% increase</p>
+                <p className="xx:text-[10px] xr:text-xs text-[#2ECC71] leading-[12.19px] font-semibold mb-3">
+                  +10% increase
+                </p>
               )}
               <p className="xx:text-[10px] xr:text-xs leading-[12.19px] font-semibold">{text}</p>
               <p className="xx:text-[22px] xr:text-2xl leading-[24.38px] font-extrabold">{value}</p>

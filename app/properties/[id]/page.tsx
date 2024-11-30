@@ -92,7 +92,7 @@ const PropertyDetails = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full gap-3 mb-3">
+      <div className="flex flex-col w-full gap-3 mb-3 montserrat">
         <Button
           name="buy property"
           src={'/dashboard/buy-property.svg'}
