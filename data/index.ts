@@ -128,3 +128,72 @@ export const analytics: AnalyticsProps[] = [
   {heading: "Total Assets Value", img: "/dashboard/analytics.svg"},
   {heading: "Properties Owned", img: "/dashboard/analytics.svg"},
 ]
+
+export const auctions = [
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+]

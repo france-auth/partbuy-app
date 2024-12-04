@@ -9,19 +9,18 @@
   font-family: --font-roboto;
 }
 
-
 .text-gradient {
-    background: linear-gradient(90deg, #3246DA 0%, #223BFE 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
+  background: linear-gradient(90deg, #3246DA 0%, #223BFE 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 .roboto {
-    font-family: var(--font-roboto);
+  font-family: var(--font-roboto);
 }
 .montserrat {
-    font-family: var(--font-montserrat);
+  font-family: var(--font-montserrat);
 }
 
 @layer utilities {
@@ -43,8 +42,14 @@
   .property-overview-button {
     @apply roboto px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] text-[10px] leading-[12.19px] uppercase font-bold
   }
+  .auction-button {
+    @apply flex text-[8px] leading-[9.38px] py-[6px] px-2 border-[#3246DA] rounded-full border border-solid roboto justify-items-center w-max
+  }
   .top-text {
     @apply roboto uppercase font-bold text-xs leading-[14.06px] text-color text-start
+  }
+  .ash-text {
+    @apply text-[#B0B0B0] text-[10px] leading-[12.19px] montserrat
   }
   .property-overview-head {
     @apply uppercase font-semibold text-[8px] leading-[9.75px] text-color
