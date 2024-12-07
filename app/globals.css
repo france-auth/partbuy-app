@@ -57,4 +57,7 @@
   .property-overview-desc {
     @apply font-light text-xs leading-[14.63px] text-[#B0B0B0]
   }
+  .filter-button {
+    @apply w-max py-[2px] px-2 rounded-full text-[8px] border border-[#3246DA]
+  }
 }

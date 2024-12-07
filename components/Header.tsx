@@ -6,9 +6,10 @@ interface HeaderProp {
   name?: string;
   id?: number;
   marketplace?: string;
+  filter?: string;
 }
 
-const Header: React.FC<HeaderProp> = ({ name, id, marketplace }) => {
+const Header: React.FC<HeaderProp> = ({ name, id, marketplace, filter }) => {
   const params = useParams(); // Access the dynamic route parameter
   const dynamicId = params?.id || id;
   const marketplaceProp = marketplace;
@@ -16,7 +17,7 @@ const Header: React.FC<HeaderProp> = ({ name, id, marketplace }) => {
   return (
     <div className="header">
         <p className="roboto font-bold text-gradient text-base leading-[18.75px]">
-          {dynamicId ? `Buy - Property ${dynamicId}` : name}
+          {filter ? `Filter By: ${filter}` : dynamicId ? `Buy - Property ${dynamicId}` : name}
         </p>
         {marketplaceProp ? (<Link href="/">
             <p className="auction-button underline">

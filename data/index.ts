@@ -196,4 +196,59 @@ export const auctions = [
     status: "Status: Available", 
     view: "view property" 
   },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+  { 
+    property: "Property A", 
+    price: "$200,000", 
+    status: "Status: Available", 
+    view: "view property" 
+  },
+]
+
+export const auctiontypes = [
+  {type: "First-Click Auction"},
+  {type: "Standard Auction"},
+  {type: "Dutch Auction"},
+  {type: "Flash Auction"},
+  {type: "Tug-of-war Auction"},
+]
+export const propertytypes = [
+  {type: "First-Click Auction"},
+  {type: "Standard Auction"},
+  {type: "Dutch Auction"},
+  {type: "Flash Auction"},
+  {type: "Tug-of-war Auction"},
+]
+export const tieraccess = [
+  {type: "Bronze Tier"},
+  {type: "Silver Tier"},
+  {type: "Gold Tier"},
+  {type: "Platinum Tier"},
+  {type: "Diamond Tier"},
+]
+export const upcomingauctions = [
+  {type: "All Upcoming Auctions"}
 ]
