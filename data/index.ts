@@ -1,3 +1,5 @@
+import { bronze, diamond, gold, platinum, silver } from "@/public/tier";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface DashboardProps {
   text: string;
@@ -251,4 +253,17 @@ export const tieraccess = [
 ]
 export const upcomingauctions = [
   {type: "All Upcoming Auctions"}
+]
+
+interface TierImagesProps {
+  img: StaticImport;
+  tier: string;
+  badge: string;
+}
+export const tierimages: TierImagesProps[] = [
+  {img: bronze, tier: "bronze tier", badge: "bronze badge"},
+  {img: silver, tier: "silver tier", badge: "silver badge"},
+  {img: gold, tier: "gold tier", badge: "gold badge"},
+  {img: diamond, tier: "platinum tier", badge: "platinum badge"},
+  {img: platinum, tier: "diamond tier", badge: "diamond badge"},
 ]

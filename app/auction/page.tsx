@@ -5,10 +5,11 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import { auctions, auctiontypes, propertytypes, tieraccess, upcomingauctions } from "@/data";
 import { useState } from "react";
+import Link from "next/link";
 
 const Auction = () => {
   const [openFilter, setOpenFilter] = useState<boolean>(false);
-  const [selectedFilterHead, setSelectedFilterHead] = useState<string>("CURRENT LISTINGS"); // State for the header filter
+  const [selectedFilterHead, setSelectedFilterHead] = useState<string>(""); // State for the header filter
   const [selectedFilterDesc, setSelectedFilterDesc] = useState<string>(""); // State for the top text name
 
   const toggleFilter = () => {
@@ -29,13 +30,15 @@ const Auction = () => {
         <div className="flex justify-between header w-screen">
           <p className="text-gradient roboto font-bold leading-[18.75px]">Basic Plan</p>
           <div className="flex gap-2">
-            <Image
-              src="/auction/bronze.svg"
-              alt="bronze"
-              width={1}
-              height={1}
-              className="w-9 h-auto"
-            />
+            <Link href={'/tier'} className="w-9 h-auto">
+              <Image
+                src="/auction/bronze.svg"
+                alt="bronze"
+                width={1}
+                height={1}
+                className="w-9 h-auto"
+              />
+            </Link>
             <Image
               src="/auction/filter.svg"
               alt="filter"
@@ -115,7 +118,9 @@ const Auction = () => {
         </div>
       ) : (
         <div className="box gap-3">
-          <p className="top-text">{selectedFilterDesc}</p>
+          <p className="top-text">{selectedFilterDesc 
+            ? selectedFilterDesc 
+            : "CURRENT LISTINGS"}</p>
           <div className="w-full space-y-5">
             {auctions.map(({ property, price, status, view }, id) => (
               <div
