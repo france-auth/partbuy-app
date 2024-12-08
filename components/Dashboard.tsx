@@ -61,7 +61,7 @@ const Dashboard = () => {
               width={id === 1 ? 9 : 15}
               height={id === 1 ? 9 : 15}
               link=""
-              className={`px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] xx:text-[8px] xr:text-[10px] leading-[12.19px] uppercase font-bold ${
+              className={`dashboard-button ${
                 id === 2 ? 'col-span-2' : ''
               }`}
             />
