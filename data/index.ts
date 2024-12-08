@@ -267,3 +267,77 @@ export const tierimages: TierImagesProps[] = [
   {img: diamond, tier: "platinum tier", badge: "platinum badge"},
   {img: platinum, tier: "diamond tier", badge: "diamond badge"},
 ]
+
+type Features = {
+  bronze?: string[];
+  silver?: string[];
+  gold?: string[];
+};
+/* 
+export const features: Features = {
+  bronze: [
+    'Basic access to tutorials, quizzes, and challenges.',
+    'Additional community support and access to basic analytics.',
+    'Participation in monthly community challenges.',
+    'Limited storage for project uploads.',
+  ],
+  silver: [
+    'All bronze features.',
+    'Priority support and extended analytics.',
+    'Access to exclusive community events.',
+    'Increased storage for project uploads.',
+  ],
+  gold: [
+    'All silver features.',
+    '1-on-1 mentorship and advanced analytics.',
+    'Exclusive access to premium courses and tutorials.',
+    'Unlimited storage for project uploads.',
+  ],
+}; */
+
+export const bronzefeatures = {
+    features: [
+    'Basic access to tutorials, quizzes, and challenges.',
+    'Additional community support and access to basic analytics.',
+    'Participation in monthly community challenges.',
+    'Limited storage for project uploads.',
+    ]
+};
+export const bronzebenefits = {
+    benefits: [
+    'Display their badge for the Bronze Tier ("Explorer").',
+    'Highlight what they can earn at this level (e.g., basic rewards for completing tutorials).'
+    ]
+};
+export const silverfeatures = {
+    features: [
+      'All bronze features.',
+      'Priority support and extended analytics.',
+      'Access to exclusive community events.',
+      'Increased storage for project uploads.',
+    ],
+};
+export const goldfeatures = {
+  features: [
+    'All silver features.',
+    '1-on-1 mentorship and advanced analytics.',
+    'Exclusive access to premium courses and tutorials.',
+    'Unlimited storage for project uploads.',
+  ]
+};
+export const platinumfeatures = {
+    features: [
+    'Basic access to tutorials, quizzes, and challenges.',
+    'Additional community support and access to basic analytics.',
+    'Participation in monthly community challenges.',
+    'Limited storage for project uploads.',
+  ]
+};
+export const diamondfeatures = {
+    features: [
+    'Basic access to tutorials, quizzes, and challenges.',
+    'Additional community support and access to basic analytics.',
+    'Participation in monthly community challenges.',
+    'Limited storage for project uploads.',
+  ]
+};
