@@ -258,25 +258,33 @@ export const upcomingauctions = [
 interface TierImagesProps {
   img: StaticImport;
   tier: string;
-  badge: string;
+  nexttTier: string;
 }
 export const tierimages: TierImagesProps[] = [
-  {img: bronze, tier: "Bronze", badge: "bronze badge"},
-  {img: silver, tier: "Silver", badge: "silver badge"},
-  {img: gold, tier: "Gold", badge: "gold badge"},
-  {img: diamond, tier: "Platinum", badge: "platinum badge"},
-  {img: platinum, tier: "Diamond", badge: "diamond badge"},
+  {img: bronze, nexttTier: "Silver Tier", tier: "bronze"},
+  {img: silver, nexttTier: "Gold Tier", tier: "silver"},
+  {img: gold, nexttTier: "Platinum Tier", tier: "gold"},
+  {img: diamond, nexttTier: "Diamond Tier", tier: "platinum"},
+  {img: platinum, nexttTier: "None", tier: "diamond"},
 ]
 
-export const tokens = [
-  "",
-  "",
-  "",
-  "",
-  "",
+export const tokens: string[] = [
+  "300,000",
+  "500,000",
+  "1,000,000",
+  "5,000,000",
+  "10,000,000",
+]
+export const xp: string[] = [
+  "No XP",
+  "10,000 XP",
+  "25,000 XP",
+  "50,000 XP",
+  "100,000 XP",
 ]
 
-export const features = [
+
+export const features: string[][] = [
   [
     'Basic access to tutorials, quizzes, and challenges.',
     'Participation in low-tier auctions and small property investments.',

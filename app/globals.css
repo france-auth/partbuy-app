@@ -78,4 +78,7 @@
   .tier-button {
     @apply roboto px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] text-[10px] leading-[10.38px] underline font-medium text-color
   }
+  .green-text {
+    @apply text-[#2ECC71] text-xs font-bold montserrat
+  }
 }

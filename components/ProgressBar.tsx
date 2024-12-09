@@ -11,14 +11,14 @@ const ProgressBar = ({
     currentIndex: number 
   }) => {
   return (
-    <div>
+    <div className="flex flex-col gap-4">
       <div className="box">
         <div className="w-full space-y-2">
           <div className="w-full flex justify-between">
             <p className="top-text">next tier</p>
-            <p className="text-[#2ECC71] montserrat font-bold text-xs">{tierimages[currentIndex].tier}</p>
+            <p className="text-[#2ECC71] montserrat font-bold text-xs">{tierimages[currentIndex].nexttTier}</p>
           </div>
-          <div className="w-full flex flex-col">
+          <div className="w-full flex flex-col space-y-3">
             <div className="w-full flex justify-between items-center">
               <p className="top-text">percentage completion</p>
               <p className="font-bold text-xs text-[#2ECC71] montserrat">{percentageCompletion}%</p>

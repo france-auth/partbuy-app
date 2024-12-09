@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
-import { benefits, features, tierimages } from "@/data";
+import { benefits, features, tierimages, tokens, xp } from "@/data";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import ProgressBar from "@/components/ProgressBar";
@@ -11,18 +11,28 @@ import ProgressBar from "@/components/ProgressBar";
 const Tier = () => {
   const [currentIndex, setCurrentIndex] = useState(0); // Track current tier index
   const [tierIndex, setTierIndex] = useState<number>(-1);
-  const percentageCompletion: number = 60; // Example progress variable (1-100)
+  const percentageCompletion: number = 80; // Example progress variable (1-100)
   const tokenAmount: number = 64;
   const xpAmount: number = 30;
+  const [isFading, setIsFading] = useState(false); // Track fade animation
 
   // Navigate to the next item
   const handleNext = () => {
-    setCurrentIndex((prevIndex) => prevIndex + 1);
+    setIsFading(true); // Start fade-out animation
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % tierimages.length); // Loop to first item
+      setIsFading(false); // Reset fade after transition
+    }, 300); // Match fade duration
   };
 
   // Navigate to the previous item
-  const handlePrevious = () => {
-    setCurrentIndex((prevIndex) => prevIndex - 1);
+  const handlePrevious = () => {setIsFading(true);
+    setTimeout(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? tierimages.length - 1 : prevIndex - 1
+      );
+      setIsFading(false);
+    }, 300);
   };
 
   const viewProperties = () => {
@@ -32,7 +42,7 @@ const Tier = () => {
   return (
     <main className="page">
       <Header name="Tiers" marketplace="Exit Marketplace" />
-      <div className="flex flex-col w-full gap-5">
+      <div className="flex flex-col w-full gap-4">
         {/* Current Tier Section */}
         {tierIndex >= 0 ? (<div className="box items-center gap-4">
           <p className="top-text">{tierIndex === -1 && 'your current tier'}</p>
@@ -90,18 +100,52 @@ const Tier = () => {
           currentIndex={currentIndex} 
           />
         )}
+        {/** REQUIREMENTS */}
+        {tierIndex > -1 && (
+          <div className="box gap-[5px]">
+          <p className="top-text">requirements section</p>
+          <div className="w-full overflow-hidden relative">
+            <div className={`transition-opacity duration-700 ${
+                  isFading ? "opacity-0" : "opacity-100"
+                }`}>
+              <div className="flex flex-col w-full">
+                <div className="w-full flex justify-between">
+                  <p className="ash-text">PartBuy Tokens</p>
+                  <p className="green-text">{tokens[currentIndex]}</p>
+                </div>
+                <div className="w-full flex justify-between">
+                  <p className="ash-text">XP Requirements</p>
+                  <p className="green-text">{xp[currentIndex]}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        )}
         {/** FEATURES */}
-        <div className="box gap-1">
+        <div className="box gap-[5px]">
           <p className="top-text">features</p>
-          <div className="ash-text">
-            <p>{features[currentIndex]}</p>
+          <div className="w-full overflow-hidden relative">
+            <div className={`transition-opacity duration-700 ${
+                  isFading ? "opacity-0" : "opacity-100"
+                }`}>
+              <div className="ash-text flex flex-col">
+                <p className="block">{features[currentIndex]}</p>
+              </div>
+            </div>
           </div>
         </div>
         {/** BENEFITS */}
-        <div className="box gap-1">
+        <div className="box gap-[5px]">
           <p className="top-text">rewards & benefits</p>
-          <div className="ash-text">
-            {benefits[currentIndex]}
+          <div className="w-full overflow-hidden relative">
+            <div className={`transition-opacity duration-700 ${
+              isFading ? "opacity-0" : "opacity-100"
+            }`}>
+              <div className="ash-text flex flex-col">
+                <p className="block">{benefits[currentIndex]}</p>
+              </div>
+            </div>
           </div>
         </div>
         {/* Buttons */}
