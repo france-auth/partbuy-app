@@ -261,83 +261,73 @@ interface TierImagesProps {
   badge: string;
 }
 export const tierimages: TierImagesProps[] = [
-  {img: bronze, tier: "bronze tier", badge: "bronze badge"},
-  {img: silver, tier: "silver tier", badge: "silver badge"},
-  {img: gold, tier: "gold tier", badge: "gold badge"},
-  {img: diamond, tier: "platinum tier", badge: "platinum badge"},
-  {img: platinum, tier: "diamond tier", badge: "diamond badge"},
+  {img: bronze, tier: "Bronze", badge: "bronze badge"},
+  {img: silver, tier: "Silver", badge: "silver badge"},
+  {img: gold, tier: "Gold", badge: "gold badge"},
+  {img: diamond, tier: "Platinum", badge: "platinum badge"},
+  {img: platinum, tier: "Diamond", badge: "diamond badge"},
 ]
 
-type Features = {
-  bronze?: string[];
-  silver?: string[];
-  gold?: string[];
-};
-/* 
-export const features: Features = {
-  bronze: [
-    'Basic access to tutorials, quizzes, and challenges.',
-    'Additional community support and access to basic analytics.',
-    'Participation in monthly community challenges.',
-    'Limited storage for project uploads.',
-  ],
-  silver: [
-    'All bronze features.',
-    'Priority support and extended analytics.',
-    'Access to exclusive community events.',
-    'Increased storage for project uploads.',
-  ],
-  gold: [
-    'All silver features.',
-    '1-on-1 mentorship and advanced analytics.',
-    'Exclusive access to premium courses and tutorials.',
-    'Unlimited storage for project uploads.',
-  ],
-}; */
+export const tokens = [
+  "",
+  "",
+  "",
+  "",
+  "",
+]
 
-export const bronzefeatures = {
-    features: [
+export const features = [
+  [
     'Basic access to tutorials, quizzes, and challenges.',
-    'Additional community support and access to basic analytics.',
-    'Participation in monthly community challenges.',
-    'Limited storage for project uploads.',
-    ]
-};
-export const bronzebenefits = {
-    benefits: [
+    'Participation in low-tier auctions and small property investments.',
+    'Cannot participate in exclusive or high-tier auctions.',
+    'Limited to beginner-level activities.',
+  ],
+  [
+    'Access to mid-level auctions, intermediate tutorials, and bonus demo tokens.',
+    'Can participate in community challenges for enhanced rewards.',
+    'Ability to get early notifications for standard auctions.',
+    'Eligibility to invite friends for additional PBT and XP bonuses.',
+  ],
+  [
+    'Access to high-tier auctions, exclusive virtual properties, and advanced tutorials.',
+    'Unlocks auto-bid tool in auctions.',
+    'Full access to First-Click Auctions.',
+    'Participation in complex challenges with higher XP/PBT rewards.'
+  ],
+  [
+    'Priority access to exclusive VIP auctions with larger and more valuable properties.',
+    'Auto-bidding tools for all auctions, and early notifications for both Flash and Tug-of-War auctions.',
+    'Ability to list properties for fractional auctions.',
+    'Participation in VIP property auctions.',
+  ],
+  [
+    'Full access to all auction types including VIP, high-value, and exclusive properties.',
+    'Auto-bidding and price-drop notifications for Dutch auctions.',
+    'Ability to list entire properties in any auction format, including First-Click and VIP.',
+    'Exclusive early access to new platform features.',
+  ],
+];
+
+export const benefits = [
+  [
     'Display their badge for the Bronze Tier ("Explorer").',
-    'Highlight what they can earn at this level (e.g., basic rewards for completing tutorials).'
-    ]
-};
-export const silverfeatures = {
-    features: [
-      'All bronze features.',
-      'Priority support and extended analytics.',
-      'Access to exclusive community events.',
-      'Increased storage for project uploads.',
-    ],
-};
-export const goldfeatures = {
-  features: [
-    'All silver features.',
-    '1-on-1 mentorship and advanced analytics.',
-    'Exclusive access to premium courses and tutorials.',
-    'Unlimited storage for project uploads.',
-  ]
-};
-export const platinumfeatures = {
-    features: [
-    'Basic access to tutorials, quizzes, and challenges.',
-    'Additional community support and access to basic analytics.',
-    'Participation in monthly community challenges.',
-    'Limited storage for project uploads.',
-  ]
-};
-export const diamondfeatures = {
-    features: [
-    'Basic access to tutorials, quizzes, and challenges.',
-    'Additional community support and access to basic analytics.',
-    'Participation in monthly community challenges.',
-    'Limited storage for project uploads.',
-  ]
-};
+    'Highlight what they can earn at this level (e.g., basic rewards for completing tutorials).',
+  ],
+  [
+    'Display their badge for the Bronze Tier ("Explorer").',
+    'Highlight what they can earn at this level (e.g., basic rewards for completing tutorials).',
+  ],
+  [
+    'Display Gold Badge ("Property Prodigy").',
+    'More significant rewards, like access to more complex auctions, bonus PBT, and tutorials on advanced blockchain/real estate topics.',
+  ],
+  [
+    'Display Platinum Badge ("Virtual Mogul").',
+    'VIP privileges like exclusive auction listings, priority notifications, and special XP bonuses for competitive auctions.',
+  ],
+  [
+    'Display Diamond Badge ("Elite Investor").',
+    'Special privileges such as complete auto-bid control, early notifications for all auctions, and exclusive invitations to high-stakes property events.',
+  ],
+]; 

@@ -23,6 +23,18 @@
   font-family: var(--font-montserrat);
 }
 
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
 @layer utilities {
   .box {
     @apply bg-[#121212] p-5 flex flex-col w-full
@@ -64,6 +76,6 @@
     @apply w-max py-[2px] px-2 rounded-full text-[8px] border border-[#3246DA]
   }
   .tier-button {
-    @apply roboto px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] text-[10px] leading-[10.38px] uppercase font-medium text-color
+    @apply roboto px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] text-[10px] leading-[10.38px] underline font-medium text-color
   }
 }
