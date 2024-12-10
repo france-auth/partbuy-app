@@ -379,8 +379,186 @@ export const tutorials: Tutorials[] = [
 ]
 
 
-export const tutorialpages = [
+export const levels = [
   {
-    
-  }
-]
+    title: 'Level 1',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 2',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 3',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 4',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 5',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 6',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 7',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 8',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 9',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  {
+    title: 'Level 10',
+    cards: [
+      { text: 'Card 1 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      { text: 'Card 2 content', buttonLabel: 'Next' },
+      // Add more cards as needed
+    ],
+  },
+  // Add more levels as needed
+];
