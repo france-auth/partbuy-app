@@ -12,7 +12,7 @@ const Tutorial = () => {
         {Array.from({ length: 10 }, (_, tutorialIndex) => {
           // Determine the number of cards for the current tutorial
           const cardCount = (tutorialIndex === 0 || tutorialIndex === 2) ? 9 : 10;
-
+          
           return (
             <div key={tutorialIndex} className="w-full space-y-2 mb-4">
               <p className="roboto font-bold leading-[14.06px] text-sm">
@@ -22,7 +22,7 @@ const Tutorial = () => {
                 {tutorials.slice(0, cardCount).map(({ img }, cardIndex) => (
                   <Link
                     key={cardIndex}
-                    href={`/tutorial/${tutorialIndex + 1}/card/${cardIndex + 1}`}
+                    href={`/tutorial/${tutorialIndex + 1}/level/${cardIndex + 1}`}
                     className="w-full bg-[#D9D9D910] col-span-1"
                   >
                     <Image

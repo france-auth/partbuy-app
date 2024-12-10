@@ -377,3 +377,10 @@ export const tutorials: Tutorials[] = [
     img: tutimg
   },
 ]
+
+
+export const tutorialpages = [
+  {
+    
+  }
+]
