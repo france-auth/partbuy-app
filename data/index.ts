@@ -1,4 +1,5 @@
 import { bronze, diamond, gold, platinum, silver } from "@/public/tier";
+import { tutimg } from "@/public/tutorial";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface DashboardProps {
@@ -339,3 +340,40 @@ export const benefits = [
     'Special privileges such as complete auto-bid control, early notifications for all auctions, and exclusive invitations to high-stakes property events.',
   ],
 ]; 
+
+
+interface Tutorials {
+  img: StaticImport
+}
+export const tutorials: Tutorials[] = [
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+  {
+    img: tutimg
+  },
+]
