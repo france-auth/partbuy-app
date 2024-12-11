@@ -158,7 +158,7 @@ const Tier = () => {
             className={`col-span-2 transition-all duration-1000 w-full grid tier-button shadow`}
           />) : (
             <>
-              {/* Next Button */}
+              {/* Previous Button */}
               {currentIndex > 0 && (
                 <Button
                   name="Previous"

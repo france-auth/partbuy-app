@@ -1,5 +1,5 @@
 import { bronze, diamond, gold, platinum, silver } from "@/public/tier";
-import { tutimg } from "@/public/tutorial";
+import { level1, level2, level3, level4, level5, level6, level7, level8, level9, level10 } from "@/public/tutorial";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 
 interface DashboardProps {
@@ -347,198 +347,187 @@ interface Tutorials {
 }
 export const tutorials: Tutorials[] = [
   {
-    img: tutimg
+    img: level1
   },
   {
-    img: tutimg
+    img: level2
   },
   {
-    img: tutimg
+    img: level3
   },
   {
-    img: tutimg
+    img: level4
   },
   {
-    img: tutimg
+    img: level5
   },
   {
-    img: tutimg
+    img: level6
   },
   {
-    img: tutimg
+    img: level7
   },
   {
-    img: tutimg
+    img: level8
   },
   {
-    img: tutimg
+    img: level9
   },
   {
-    img: tutimg
+    img: level10
   },
 ]
 
 
-export const levels = [
+type Card = {
+  text: string; // Main text of the card
+  description?: string; // Optional description of the card
+};
+
+type Level = {
+  title: string; // Level ID
+  cards: Card[][]; // Array of cards
+};
+
+export const levels: Level[] = [
   {
     title: 'Level 1',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 2',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next'}
-    ]
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
+    ],
   },
   {
     title: 'Level 3',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 4',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 5',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 6',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 7',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 8',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 9',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 10',
     cards: [
-      { text: 'Card 1 content', buttonLabel: 'Next' },
-      { text: 'Card 2 content', buttonLabel: 'Next' },
-      { text: 'Card 3 content', buttonLabel: 'Next' },
-      { text: 'Card 4 content', buttonLabel: 'Next' },
-      { text: 'Card 5 content', buttonLabel: 'Next' },
-      { text: 'Card 6 content', buttonLabel: 'Next' },
-      { text: 'Card 7 content', buttonLabel: 'Next' },
-      { text: 'Card 8 content', buttonLabel: 'Next' },
-      { text: 'Card 9 content', buttonLabel: 'Next' },
-      { text: 'Card 10 content', buttonLabel: 'Next' }
-      // Add more cards as needed
+      [
+        { text: 'Card 1 content', description: 'Description for Card 1' },
+        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+      ],
+      [
+        { text: 'Card 2 content', description: 'Description for Card 2' },
+        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
+      ],
+      // Add more nested arrays for cards
     ],
   },
-  // Add more levels as needed
-];
+] 
