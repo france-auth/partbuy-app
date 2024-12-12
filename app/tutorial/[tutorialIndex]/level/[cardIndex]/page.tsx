@@ -64,19 +64,22 @@ const TutorialCardPage = () => {
       </div>
         <div className="w-full grid grid-cols-2 justify-items-center gap-3 mt-4">
           {/* Next Button */}
-          {tutorialIdx > 0 && (
+          {tutorialIdx > 1 && (
                 <Button
                   name="Previous"
                   onClick={goToPreviousLevel}
-                  className={`${tutorialIdx === level.cards.length - 1 ? 'col-span-2' : 'col-span-1' }  transition-all duration-1000 w-full grid tier-button shadow`}
+                  className={`${tutorialIdx > level.cards.length - 1 ? 'col-span-2' : 'col-span-1' }  transition-all duration-1000 w-full grid tier-button shadow`}
                 />
               )}
               {/* Next Button */}
-              {tutorialIdx > level.cards.length - 1 && (
+              {tutorialIdx > 0 && (
                 <Button
                   name="Next"
                   onClick={goToNextLevel}
-                  className={`${tutorialIdx === 1 ? 'col-span-2' : 'col-span-1'} transition-all duration-1000 w-full grid tier-button shadow"`}
+                  className={`${tutorialIdx === level.cards.length - 1
+                    ? 'hidden' 
+                    : tutorialIdx === 1
+                    ? 'col-span-2' : 'col-span-1'} transition-all duration-1000 w-full grid tier-button shadow`}
                 />
               )}
         </div>
