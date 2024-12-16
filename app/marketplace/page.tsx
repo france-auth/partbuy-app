@@ -1,11 +1,10 @@
 import Navbar from "@/components/Navbar";
+import Header from "@/components/Header";
 
 const Marketplace = () => {
   return (
     <main className="page">
-      <div className="header">
-        <h1>MARKETPLACE</h1>
-      </div>
+      <Header name="Marketplace" marketplace="Exit Marketplace" />
       <Navbar />
     </main>
   )

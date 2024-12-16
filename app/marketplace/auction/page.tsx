@@ -30,7 +30,7 @@ const Auction = () => {
         <div className="flex justify-between header w-screen">
           <p className="text-gradient roboto font-bold leading-[18.75px]">Basic Plan</p>
           <div className="flex gap-2">
-            <Link href={'/tier'} className="w-9 h-auto">
+            <Link href={'/marketplace/tier'} className="w-9 h-auto">
               <Image
                 src="/auction/bronze.svg"
                 alt="bronze"

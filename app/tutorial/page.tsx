@@ -1,10 +1,10 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image"; 
 import { tutorials } from "@/data";
 import Navbar from "@/components/Navbar";
 import Headers from "@/components/Header";
-import Link from "next/link";
 
 const Tutorial = () => {
   return (
@@ -21,9 +21,9 @@ const Tutorial = () => {
               <p className="roboto font-bold leading-[14.06px] text-sm">
                 Tutorial {tutorialIndex + 1}
               </p>
-              
               {/* Tutorial Image */}
-              <Link href={`/tutorial/${tutorialIndex + 1}/level/1`} className="pt-2 pb-2 w-full mx-auto cursor-pointer">
+              <Link href={`/tutorial/${tutorialIndex + 1}/level/1`} 
+                className="grid justify-items-center pt-2 pb-2 w-full mx-auto cursor-pointer">
                 <Image
                   src={tutorials[tutorialIndex].img}
                   alt={`Tutorial ${tutorialIndex + 1}`}

@@ -4,6 +4,7 @@ import { useParams, useRouter } from 'next/navigation';
 import Header from '@/components/Header';
 import { levels } from '@/data'; // Ensure `levels` is properly imported
 import Button from '@/components/ui/Button';
+import Navbar from '@/components/Navbar';
 
 const TutorialCardPage = () => {
   const params = useParams();
@@ -28,35 +29,35 @@ const TutorialCardPage = () => {
   }
 
   // Calculate previous and next level indices
-  const previousLevelIndex = tutorialIdx > 1 ? tutorialIdx - 1 : null;
-  const nextLevelIndex = tutorialIdx < levels.length ? tutorialIdx + 1 : null;
+  const previousLevelIndex = cardIdx > 1 ? cardIdx - 1 : null;
+  const nextLevelIndex = cardIdx < levels.length ? cardIdx + 1 : null;
 
   // Navigation functions
   const goToPreviousLevel = () => {
     if (previousLevelIndex) {
-      router.push(`/tutorial/${previousLevelIndex}/level/1`);
+      router.push(`/tutorial/${tutorialIdx}/level/${previousLevelIndex}`);
     }
   };
 
   const goToNextLevel = () => {
     if (nextLevelIndex) {
-      router.push(`/tutorial/${nextLevelIndex}/level/1`);
+      router.push(`/tutorial/${tutorialIdx}/level/${nextLevelIndex}`);
     }
   };
 
   return (
-    <main className="page">
+    <main className="page text-color">
       <Header tutorialIndex={tutorialIdx} cardIndex={cardIdx} />
-      <div className="w-full fade-in">
+      <div className="w-full">
         {/* Map over all cards and display them */}
         <div className="w-full space-y-4">
-          {level.cards.map((card, id) => (
-            <div key={id} className="box">
-              <p className="top-text">
-                {card[id].text}
+          {level.cards.map((card, cardIdx) => (
+            <div key={cardIdx} className="box">
+              <p className="top-text fade-in">
+                {card[cardIdx].text}
               </p>
-              <p className=''>
-                {card[id].description}
+              <p className='fade-in'>
+                {card[cardIdx].description}
               </p>
             </div>
           ))}
@@ -64,25 +65,32 @@ const TutorialCardPage = () => {
       </div>
         <div className="w-full grid grid-cols-2 justify-items-center gap-3 mt-4">
           {/* Next Button */}
-          {tutorialIdx > 1 && (
+          {cardIdx > 0 && (
                 <Button
                   name="Previous"
                   onClick={goToPreviousLevel}
-                  className={`${tutorialIdx > level.cards.length - 1 ? 'col-span-2' : 'col-span-1' }  transition-all duration-1000 w-full grid tier-button shadow`}
+                  className={`${cardIdx === 1 ? 'hidden' 
+                    : cardIdx === 10 ? 'col-span-2' 
+                    : 'col-span-1'}  
+                    transition-all duration-1000 w-full grid tier-button shadow
+                  `}
                 />
               )}
               {/* Next Button */}
-              {tutorialIdx > 0 && (
+              {cardIdx > 0 && (
                 <Button
                   name="Next"
                   onClick={goToNextLevel}
-                  className={`${tutorialIdx === level.cards.length - 1
+                  className={`${cardIdx === 10
                     ? 'hidden' 
-                    : tutorialIdx === 1
-                    ? 'col-span-2' : 'col-span-1'} transition-all duration-1000 w-full grid tier-button shadow`}
+                    : cardIdx === 1
+                    ? 'col-span-2' : 'col-span-1'} 
+                    transition-all duration-1000 w-full grid tier-button shadow
+                  `}
                 />
               )}
         </div>
+      <Navbar />
     </main>
   );
 };

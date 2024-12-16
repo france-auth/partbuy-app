@@ -30,10 +30,10 @@ const navbarItems: NavbarItem[] = [
 
 const navbarItems2: NavbarItem[] = [
   { name: "Marketplace", SvgComponent: MarketplaceSvg, path: "/marketplace" },
-  { name: "Auction", SvgComponent: AuctionSvg, path: "/auction" },
-  { name: "Tier", SvgComponent: TierSvg, path: "/tier" },
-  { name: "Valuation", SvgComponent: ValuationSvg, path: "/valuation" },
-  { name: "Referral", SvgComponent: ReferralSvg, path: "/referral" },
+  { name: "Auction", SvgComponent: AuctionSvg, path: "/marketplace/auction" },
+  { name: "Tier", SvgComponent: TierSvg, path: "/marketplace/tier" },
+  { name: "Valuation", SvgComponent: ValuationSvg, path: "/marketplace/valuation" },
+  { name: "Referral", SvgComponent: ReferralSvg, path: "/marketplace/referral" },
 ];
 
 const FirstNav = () => {
@@ -93,10 +93,7 @@ const Navbar: React.FC = () => {
     <main className="w-screen fixed bottom-0 right-0 left-0 bg-[#FFFFFF1A] backdrop-blur-[50px] bg-opacity-90 z-50">
       <div className="flex items-center justify-evenly montserrat font-bold text-[8px] leading-[8px] h-full p-2 px-3">
         {/* Conditional visibility logic */}
-        {pathname === "/marketplace"/*  || "/auction" || "tier" || "valuation" || "/referral "" */ 
-          ? <SecondNav /> 
-          : pathname === "/" || "/challenges" || "tutorial" || "settings" || "/profile" 
-          ? <FirstNav /> : <FirstNav /> }
+        {pathname.includes("/marketplace/") ? <SecondNav /> : <FirstNav /> }
       </div>
     </main>
   );
