@@ -34,7 +34,7 @@ const Dashboard = () => {
             className="property-button border-gradient"
           />
         </div>
-        <div className="grid grid-cols-2 w-full justify-items-center montserrat gap-2 p-2 xr:p-3">
+        <div className="grid grid-cols-2 w-full justify-center montserrat gap-2 p-2 xr:p-3">
           {dashboardcards.map(({text, value}, id) => (
             <div 
               key={id} 
