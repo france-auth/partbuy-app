@@ -394,140 +394,270 @@ export const levels: Level[] = [
     title: 'Level 1',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'introductions to real world assets (rwas)', 
+          description: 'In this tutorial, we will explore what Real World Assets (RWAs) are and their significance in investment.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Take a quick quiz'
+        },
+        { 
+          text: 'What are RWAs?', 
+          description: ' Real World Assets (RWAs) are physical, tangible assets  that hold intrinsic value in the real world. Examples include real estate,  precious metals like gold, commodities, art, and collectibles.'
+        },
+        { 
+          text: 'significance', 
+          description: 'RWAs have historically been reliable and relatively stable  investments. They provide a tangible store of value, often acting as a hedge  against market volatility.'
+        },
+        { 
+          text: 'rwas in investment', 
+          description: 'Traditionally, investing in RWAs required significant  capital and came with limitations like low liquidity and complex ownership  processes.'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 2',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'What is Tokenization?', 
+          description: 'In this tutorial, we will define tokenization and explore its benefits.' 
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Animation showing  the tokenization process'
+        },
+        { 
+          text: 'definition', 
+          description: 'Tokenization is the process of converting ownership of real world assets into digital tokens on a blockchain. Each token represents a  fraction of the asset.'
+        },
+        { 
+          text: 'why tokenize',
+          description: 'Tokenization simplifies the process of buying, selling, and  transferring ownership. It allows fractional ownership, enabling more people  to invest in high-value assets.'
+        },
+        { 
+          text: 'example',
+          description: ' Imagine a high-value property worth $1 million. Through tokenization, this  property can be divided into 1 million tokens. Investors can buy and own as many  tokens as they wish, making the investment more accessible.'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 3',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'why tokenize real estate', 
+          description: 'This tutorial discusses the reasons for tokenizing real estate.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'View case  studies of tokenized products'
+        },
+        { 
+          text: 'accessibility', 
+          description: ' Real estate tokenization lowers the barriers to entry. Investors  can own a fraction of a property without needing a large sum of capital.'
+        },
+        { 
+          text: 'liquidity',
+          description: "Traditional real estate investments are illiquid, meaning it's hard  to sell them quickly. Tokenization provides liquidity by enabling faster  transactions in a secondary market."
+        },
+        { 
+          text: 'transparency & security',
+          description: 'Using blockchain technology ensures that all  transactions are transparent and secure. It also reduces the need for  intermediaries, streamlining the investment process.'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 4',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 5',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 6',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 7',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 8',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 9',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
   {
     title: 'Level 10',
     cards: [
       [
-        { text: 'Card 1 content', description: 'Description for Card 1' },
-        { text: 'Card 1 additional info', description: 'Additional description for Card 1' },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'Card 1 content', 
+          description: 'Description for Card 1'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
+        { 
+          text: 'interactive element',
+          description: 'Description for Card 2'
+        },
       ],
-      [
-        { text: 'Card 2 content', description: 'Description for Card 2' },
-        { text: 'Card 2 additional info', description: 'Additional description for Card 2' },
-      ],
-      // Add more nested arrays for cards
     ],
   },
 ] 

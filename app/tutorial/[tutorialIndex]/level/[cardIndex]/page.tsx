@@ -51,14 +51,18 @@ const TutorialCardPage = () => {
       <div className="w-full">
         {/* Map over all cards and display them */}
         <div className="w-full space-y-4">
-          {level.cards.map((card, cardIdx) => (
-            <div key={cardIdx} className="box">
-              <p className="top-text fade-in">
-                {card[cardIdx].text}
-              </p>
-              <p className='fade-in'>
-                {card[cardIdx].description}
-              </p>
+          {level.cards.map((cardGroup, groupIdx) => (
+            <div key={groupIdx} className="space-y-4">
+              {cardGroup.map((card, cardIdx) => (
+                <div key={cardIdx} className="box rounded-sm shadow-md">
+                  <p className="top-text fade-in">
+                    {card.text}
+                  </p>
+                  <p className='fade-in ash-text'>
+                    {card.description}
+                  </p>
+                </div>
+              ))}
             </div>
           ))}
         </div>
@@ -66,15 +70,15 @@ const TutorialCardPage = () => {
         <div className="w-full grid grid-cols-2 justify-items-center gap-3 mt-4">
           {/* Next Button */}
           {cardIdx > 0 && (
-                <Button
-                  name="Previous"
-                  onClick={goToPreviousLevel}
-                  className={`${cardIdx === 1 ? 'hidden' 
-                    : cardIdx === 10 ? 'col-span-2' 
-                    : 'col-span-1'}  
-                    transition-all duration-1000 w-full grid tier-button shadow
-                  `}
-                />
+            <Button
+              name="Previous"
+              onClick={goToPreviousLevel}
+              className={`${cardIdx === 1 ? 'hidden' 
+                : cardIdx === 10 ? 'col-span-2' 
+                : 'col-span-1'}  
+                transition-all duration-1000 w-full grid tier-button shadow
+              `}
+            />
               )}
               {/* Next Button */}
               {cardIdx > 0 && (
