@@ -10,7 +10,7 @@ const Tutorial = () => {
   return (
     <main className="page">
       <Headers name="Tutorials" />
-      <div className="box text-color grid grid-cols-2 gap-6">
+      <div className="box text-color grid grid-cols-2 gap-6 mt-16">
         {Array.from({ length: 10 }, (_, tutorialIndex) => {
           return (
             <div 

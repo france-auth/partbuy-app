@@ -9,7 +9,6 @@ import Navbar from '@/components/Navbar';
 const TutorialCardPage = () => {
   const params = useParams();
   const router = useRouter();
-
   const tutorialIndex = params.tutorialIndex;
   const cardIndex = params.cardIndex;
 
@@ -27,10 +26,10 @@ const TutorialCardPage = () => {
   if (!level) {
     return <p className="text-center">Level not found.</p>;
   }
-
+  
   // Calculate previous and next level indices
   const previousLevelIndex = cardIdx > 1 ? cardIdx - 1 : null;
-  const nextLevelIndex = cardIdx < levels.length ? cardIdx + 1 : null;
+  const nextLevelIndex = cardIdx < level.cards.length ? cardIdx + 1 : null;
 
   // Navigation functions
   const goToPreviousLevel = () => {
@@ -48,9 +47,9 @@ const TutorialCardPage = () => {
   return (
     <main className="page text-color">
       <Header tutorialIndex={tutorialIdx} cardIndex={cardIdx} />
-      <div className="w-full">
+      <div className="w-full mt-16">
         {/* Map over all cards and display them */}
-        <div className="w-full space-y-4">
+        {/*  <div className="w-full space-y-4">
           {level.cards.map((cardGroup, groupIdx) => (
             <div key={groupIdx} className="space-y-4">
               {cardGroup.map((card, cardIdx) => (
@@ -65,6 +64,18 @@ const TutorialCardPage = () => {
               ))}
             </div>
           ))}
+        </div> */}
+        <div className="w-full space-y-4">
+          {level.cards[cardIdx -1].map((card, groupIdx) => (
+            <div key={groupIdx} className="space-y-4 box rounded-sm shadow-md">
+                  <p className="top-text fade-in">
+                    {card.text}
+                  </p>
+                  <p className='fade-in ash-text'>
+                    {card.description}
+                  </p>
+            </div>
+          ))}
         </div>
       </div>
         <div className="w-full grid grid-cols-2 justify-items-center gap-3 mt-4">
@@ -73,7 +84,7 @@ const TutorialCardPage = () => {
             <Button
               name="Previous"
               onClick={goToPreviousLevel}
-              className={`${cardIdx === 1 ? 'hidden' 
+              className={`${cardIdx === 0 ? 'hidden' 
                 : cardIdx === 10 ? 'col-span-2' 
                 : 'col-span-1'}  
                 transition-all duration-1000 w-full grid tier-button shadow
@@ -81,13 +92,13 @@ const TutorialCardPage = () => {
             />
               )}
               {/* Next Button */}
-              {cardIdx > 0 && (
+              {cardIdx >= 0 && (
                 <Button
                   name="Next"
                   onClick={goToNextLevel}
                   className={`${cardIdx === 10
                     ? 'hidden' 
-                    : cardIdx === 1
+                    : cardIdx === 0
                     ? 'col-span-2' : 'col-span-1'} 
                     transition-all duration-1000 w-full grid tier-button shadow
                   `}

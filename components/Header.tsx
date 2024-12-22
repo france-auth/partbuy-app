@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProp> = ({ name, id, tutorialIndex, cardIndex, mark
   const marketplaceProp = marketplace;
 
   return (
-    <div className="header">
+    <div className="header fixed">
       {/* Dynamic title logic */}
       <p className="roboto font-bold text-gradient text-base leading-[18.75px]">
         {filter
