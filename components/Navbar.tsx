@@ -37,14 +37,21 @@ const navbarItems2: NavbarItem[] = [
 ];
 
 const FirstNav = () => {
-  const pathname = usePathname();
+  const pathname = usePathname(); // Get the current pathname
   const router = useRouter();
 
   return (
     <>
       {navbarItems.map(({ name, SvgComponent, path }, id) => {
-        const isActive = pathname === path;
-        if (pathname === '/marketplace' && id < 6 ) return null
+        // Check if the current path is active
+        const isActive =
+          pathname.startsWith(path) || // Matches the base path (e.g., "/tutorial" or "/challenges")
+          (path === "/tutorial" && pathname.includes("/tutorial")) || // Explicit check for "/tutorial"
+          (path === "/challenges" && pathname.includes("/challenges")); // Explicit check for "/challenges"
+          
+        // Hide items when on `/marketplace` if the ID is less than 6
+        if (pathname === "/marketplace" && id < 6) return null;
+
         return (
           <div
             key={id}
@@ -61,6 +68,7 @@ const FirstNav = () => {
     </>
   );
 };
+
 
 const SecondNav = () => {
   const pathname = usePathname();
