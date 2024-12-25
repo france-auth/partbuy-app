@@ -1100,6 +1100,28 @@ export const levels: Level[] = [
       ],
       [
         { 
+          text: 'Creating Your First Smart Contract', 
+          description: 'This tutorial provides a step-by-step guide to creating your first smart contract.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Code editor for writing and deploying a smart contract.'
+        },
+        { 
+          text: 'Steps to Create', 
+          description: 'Identify agreement terms, choose a blockchain platform (like Ethereum), write the code using a programming language such as Solidity, and deploy it on the blockchain.'
+        },
+        { 
+          text: 'Testing',
+          description: "It’s vital to test the smart contract thoroughly to identify any potential issues before deployment."
+        },
+        { 
+          text: 'Resources',
+          description: 'Utilize platforms and tutorials that offer guidance on coding and deploying smart contracts.'
+        },
+      ],
+      [
+        { 
           text: 'Smart Contracts vs. Traditional Contracts', 
           description: 'In this tutorial, we will compare smart contracts with traditional contracts.'
         },
@@ -1597,6 +1619,94 @@ export const levels: Level[] = [
           description: 'Some regions may offer incentives for investing in tokenized assets, such as lower capital gains taxes or tax credits.'
         },
       ],
+      [
+        { 
+          text: 'Yield Farming and Staking in Tokenized Real Estate', 
+          description: 'In this tutorial, we will introduce yield farming and staking in the context of tokenized real estate.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Yield farming simulation tool.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Yield farming and staking are innovative strategies for generating passive income from tokenized real estate assets. This tutorial explains how these methods work and their benefits.'
+        },
+        { 
+          text: 'How It Works',
+          description: 'Yield farming involves lending tokens to liquidity pools, while staking allows investors to lock up their tokens in exchange for rewards.'
+        },
+        { 
+          text: 'Generating Passive Income',
+          description: 'Generating Passive Income'
+        },
+      ],
+      [
+        { 
+          text: 'Using Data Analytics for Real Estate Investment Decisions', 
+          description: 'This tutorial focuses on leveraging data analytics for informed real estate investment decisions.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Data analytics dashboard.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Data analytics can significantly improve investment decisions by providing insights into property trends and market conditions. This tutorial discusses leveraging blockchain data for performance assessments.'
+        },
+        { 
+          text: 'Evaluating Property Trends',
+          description: 'Investors can use analytics to track price movements, rental yields, and demand trends, informing better strategic choices.'
+        },
+        { 
+          text: 'Informed Decision-Making',
+          description: 'Combining data with market expertise can lead to a more comprehensive understanding of potential investments.'
+        },
+      ],
+      [
+        { 
+          text: 'Exit Strategies for Tokenized Real Estate Investments', 
+          description: 'In this tutorial, we will explore effective exit strategies for tokenized real estate investments.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Exit strategy planner.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Planning exit strategies is crucial for maximizing returns and minimizing losses. This tutorial covers various strategies, including selling tokens on secondary markets and buyback options.'
+        },
+        { 
+          text: 'Importance of Exit Planning',
+          description: 'Investors should be proactive about their exit strategies, considering market conditions and personal financial goals.'
+        },
+        { 
+          text: 'Exploring Buyback Options',
+          description: 'Understanding the terms of buyback agreements can enhance liquidity and provide a safety net for investors.'
+        },
+      ],
+      [
+        { 
+          text: 'Global Real Estate Investment Opportunities', 
+          description: 'This final tutorial examines global real estate investment opportunities through tokenization.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Global investment map.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Tokenized real estate opens up global markets, allowing for diverse geographical investments. This tutorial highlights emerging markets and opportunities for international investments.'
+        },
+        { 
+          text: 'Scenario',
+          description: 'Investors can explore properties in various countries, benefiting from different economic conditions and market cycles.'
+        },
+        { 
+          text: 'Scenario',
+          description: 'Understanding trends in emerging markets can provide unique opportunities for growth and profitability.'
+        },
+      ],
     ],
   },
   {
@@ -1604,112 +1714,198 @@ export const levels: Level[] = [
     cards: [
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Overview of Tokenized Real Estate Markets', 
+          description: 'In this tutorial, we will define tokenized real estate and explore its key characteristics.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Infographic summarizing market dynamics.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Tokenized real estate markets involve the digitization of property assets, allowing for fractional ownership through blockchain technology. This innovation enhances market accessibility and liquidity.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Key Characteristics',
+          description: 'Tokenization allows for transparent ownership records and easier transfer of property shares. It democratizes real estate investment, enabling smaller investors to enter the market.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Market Dynamics',
+          description: 'The introduction of tokenized assets has created new opportunities for both investors and property owners, transforming how real estate transactions occur.'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Benefits of Tokenization in Real Estate', 
+          description: 'This tutorial focuses on the benefits of tokenization for real estate investors.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Benefits comparison chart.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Tokenization brings several benefits, including increased liquidity, reduced transaction costs, and broader market access.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Liquidity',
+          description: 'Tokenized assets can be bought and sold quickly, offering investors more flexibility compared to traditional real estate investments.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Cost Efficiency',
+          description: 'By lowering transaction costs and eliminating intermediaries, tokenization makes investing in real estate more affordable.'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'How to Buy and Sell Tokenized Real Estate', 
+          description: 'In this tutorial, we will provide a step-by-step guide on buying and selling tokenized assets.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Interactive checklist for buying and selling.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Understanding the process of buying and selling tokenized real estate is crucial for investors.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Buying Process',
+          description: 'Investors typically start by creating an account on a tokenization platform, completing KYC requirements, and funding their account'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Selling Tokens',
+          description: 'To sell, investors can list their tokens on a marketplace, providing transparency and ease of transactions.'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'The Role of Smart Contracts in Tokenized Markets', 
+          description: 'This tutorial explores the functionality of smart contracts in tokenized real estate.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Smart contract flowchart.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Smart contracts are self-executing contracts with terms directly written into code. They enhance efficiency and security in transactions.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Benefits of Automation',
+          description: 'Smart contracts reduce the need for intermediaries, streamlining processes and lowering costs.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Security Features',
+          description: 'They provide transparent, tamper-proof records, ensuring that all parties fulfill their obligations.'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Regulatory Landscape for Tokenized Real Estate', 
+          description: 'In this tutorial, we will review the regulatory frameworks surrounding tokenized real estate.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Regulatory landscape map.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'The regulatory framework for tokenized real estate varies globally, impacting how these markets operate.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Compliance Importance',
+          description: 'Understanding local regulations is crucial to avoid legal pitfalls and ensure smooth transactions.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'Potential Challenges',
+          description: 'As the market evolves, regulations may change, requiring investors to stay informed and adaptable.'
+        },
+      ],
+      [
+        { 
+          text: 'Investment Strategies in Tokenized Real Estate Markets', 
+          description: 'This tutorial focuses on effective investment strategies within tokenized real estate markets.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Timeline of major blockchain forks.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Fractional ownership allows investors to buy smaller portions of a property rather than owning it outright. Through tokenization, fractional ownership becomes more accessible to a wider range of investors, enabling diversification across multiple properties.'
+        },
+        { 
+          text: 'Advantages',
+          description: 'Investors can spread their capital across different properties, reducing risk while participating in real estate markets with lower entry costs.'
+        },
+      ],
+      [
+        { 
+          text: 'Case Studies of Successful Tokenized Real Estate Projects', 
+          description: 'This tutorial focuses on effective investment strategies within tokenized real estate markets.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Investment strategy planner.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Tokenized real estate offers unique advantages compared to traditional real estate, including increased liquidity, transparency, and lower entry barriers. However, it also carries risks, such as regulatory uncertainty and market volatility.'
+        },
+        { 
+          text: 'Comparison',
+          description: 'Traditional real estate investments can take longer to sell and require more capital upfront, while tokenized real estate enables faster transactions and fractional ownership.'
+        },
+      ],
+      [
+        { 
+          text: 'CChallenges and Risks in Tokenized Real Estate Markets', 
+          description: 'This tutorial addresses the challenges and risks associated with tokenized real estate investments.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Risk assessment tool.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Tokenization allows investors to diversify their real estate portfolio by purchasing tokens in multiple properties across different regions or asset types (e.g., residential, commercial, or industrial).'
+        },
+        { 
+          text: 'Diversification Benefits',
+          description: 'Reducing risk by spreading investments across various markets and asset types can provide more stability in an investor’s portfolio.'
+        },
+      ],
+      [
+        { 
+          text: 'Future Outlook for Tokenized Real Estate Markets', 
+          description: 'In this tutorial, we will explore the future of tokenized real estate markets.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Future trends prediction tool.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'The secondary market for tokenized real estate allows investors to buy and sell property tokens after their initial sale. This liquidity feature is a significant advantage over traditional real estate markets, where selling can take months or even years.'
+        },
+        { 
+          text: 'Secondary Market Features',
+          description: 'Token holders can list their tokens on a platform, where other investors can purchase them, offering real-time trading opportunities.'
+        },
+      ],
+      [
+        { 
+          text: 'Interactive Simulation: Participating in a Tokenized Real Estate Market', 
+          description: 'You will analyze real blockchain data to understand transaction patterns and network activity.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Blockchain data exploration tool.'
+        },
+        { 
+          text: 'Scenario', 
+          description: 'Participants will explore blockchain data through practical exercises, learning how to read transactions, blocks, and smart contracts. This hands-on approach helps demystify blockchain technology.'
         },
       ],
     ],
@@ -1719,112 +1915,182 @@ export const levels: Level[] = [
     cards: [
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Legal Framework for Tokenized Real Estate in Dubai and UAE', 
+          description: 'In this tutorial, we will explore the legal framework governing tokenized real estate in Dubai and the UAE.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Flowchart of the legal framework.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Dubai and the UAE are rapidly advancing as hubs for blockchain technology, with regulatory frameworks evolving to support tokenized real estate. This tutorial covers the legal landscape, focusing on property rights, tokenization rules, and compliance with local real estate laws.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
-        },
-        { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key points',
+          description: "UAE laws on property tokenization. Compliance with Dubai's real estate regulations (DLD- Dubai Land Department). The UAE's progressive stance on blockchain and crypto assets."
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Securities Laws and Tokenized Real Estate in Dubai and UAE', 
+          description: 'This tutorial focuses on the classification of tokenized assets under UAE law.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Classification matrix of tokenized assets.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Tokenized real estate in the UAE may fall under the scope of securities regulations. This tutorial explains how the UAE Securities and Commodities Authority (SCA) classifies and regulates security tokens.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
-        },
-        { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key points',
+          description: "UAE’s securities law related to tokenized assets. Licensing requirements for platforms offering tokenized real estate. The role of the UAE Central Bank in financial regulations."
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'KYC (Know Your Customer) and AML (Anti-Money Laundering) Requirements in the UAE', 
+          description: 'In this tutorial, we will examine the importance of KYC and AML in tokenized real estate.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'KYC/AML compliance checklist.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'The UAE has strict KYC and AML regulations, which tokenized real estate platforms must follow to prevent illegal activities. This tutorial explains the requirements for investors and how these laws protect the market.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
-        },
-        { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'compliance steps',
+          description: 'compliance steps'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Property Rights and Tokenized Assets in Dubai and UAE', 
+          description: 'This tutorial focuses on how tokenized ownership is structured in the UAE'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Diagram of ownership structure.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'In Dubai and the UAE, tokenized real estate represents fractional ownership in compliance with local property laws. This tutorial explains how ownership works within the Dubai Land Department framework and how token holders can exercise their property rights.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
-        },
-        { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key points',
+          description: "DLD’s rules for real estate ownership. Rights of fractional owners in tokenized property. Enforcement of property rights in tokenized markets"
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Smart Contracts and Legal Enforceability in Dubai and UAE', 
+          description: 'In this tutorial, we will explore the legal recognition of smart contracts in the UAE.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Smart contract lifecycle chart.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: "Smart contracts are gaining legal recognition in the UAE, but their enforceability depends on how they're structured. This tutorial covers how smart contracts are viewed in the UAE and their role in tokenized real estate transactions."
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key considerations',
+          description: "Dubai’s recognition of blockchain-based contracts. Smart contracts’ legal enforceability in real estate transactions. Minimizing legal risks when using smart contracts."
+        },
+      ],
+      [
+        { 
+          text: 'Taxation in Tokenized Real Estate in Dubai and UAE', 
+          description: 'Taxation in Tokenized Real Estate in Dubai and UAE'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'interactive element', 
+          description: 'Tax implications calculator.'
+        },
+        { 
+          text: 'explanation', 
+          description: "The UAE offers a favorable tax environment for real estate investors, but tokenized real estate still comes with tax considerations. This tutorial covers the tax implications of buying and selling real estate tokens in the UAE."
+        },
+        { 
+          text: 'key points',
+          description: "Tax-free capital gains on real estate transactions. VAT (Value Added Tax) on real estate and token sales. How tokenization affects property-related tax obligations."
+        },
+      ],
+      [
+        { 
+          text: 'Cross-Border Investments and Regulatory Challenges in Dubai and UAE', 
+          description: 'In this tutorial, we will examine cross-border investment rules and regulatory challenges.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Cross-border investment flowchart.'
+        },
+        { 
+          text: 'explanation', 
+          description: "Dubai’s strategic location and legal framework make it an attractive destination for cross-border tokenized real estate investments. However, navigating international laws and UAE-specific regulations can be complex."
+        },
+        { 
+          text: 'key considerations',
+          description: "Cross-border investment rules in the UAE. Double taxation treaties and their impact on foreign investors. Compliance with both UAE and foreign regulations."
+        },
+      ],
+      [
+        { 
+          text: 'Legal Risks in Tokenized Real Estate Transactions in Dubai and UAE', 
+          description: 'This tutorial addresses common legal risks associated with tokenized real estate transactions.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Risk assessment tool.'
+        },
+        { 
+          text: 'explanation', 
+          description: "While Dubai’s regulatory environment is progressive, legal risks still exist in tokenized real estate transactions. This tutorial covers common risks such as disputes over property rights, platform security, and fraud in the UAE market."
+        },
+        { 
+          text: 'key points',
+          description: "Potential property disputes under Dubai Land Department rules. Platform security vulnerabilities. Fraud and misrepresentation in token issuance."
+        },
+      ],
+      [
+        { 
+          text: 'Role of Special Purpose Vehicles (SPVs) in Tokenization in Dubai and UAE', 
+          description: 'In this tutorial, we will explore the function and benefits of SPVs in tokenization.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'SPV structure diagram.'
+        },
+        { 
+          text: 'explanation', 
+          description: "SPVs are commonly used in Dubai to manage real estate tokenization legally. This tutorial explains how SPVs function in the UAE, offering protections to investors and ensuring compliance with local regulations."
+        },
+        { 
+          text: 'key points',
+          description: "How SPVs are structured under UAE law. Benefits of using SPVs for tokenized real estate. Ensuring legal protection through SPVs in Dubai’s real estate market."
+        },
+      ],
+      [
+        { 
+          text: 'Future Legal Trends in Tokenized Real Estate in Dubai and UAE', 
+          description: 'This final tutorial examines emerging legal trends in tokenized real estate.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Future trends prediction tool.'
+        },
+        { 
+          text: 'explanation', 
+          description: "Dubai and the UAE are constantly updating their regulatory frameworks to accommodate innovations like tokenized real estate. This tutorial explores emerging legal trends, such as potential new laws and international partnerships that will shape the future of tokenization in the region."
+        },
+        { 
+          text: 'key points',
+          description: "Upcoming regulatory changes in Dubai and the UAE. UAE government initiatives for blockchain and tokenization. The role of international agreements in shaping future real estate markets."
         },
       ],
     ],
@@ -1834,114 +2100,199 @@ export const levels: Level[] = [
     cards: [
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: "AI’s Impact on Real Estate", 
+          description: 'Artificial Intelligence (AI) is reshaping the real estate sector, enhancing everything from market analysis to property management.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'AI impact infographic.'
         },
         { 
           text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          description: "Artificial Intelligence (AI) is reshaping the real estate sector, enhancing everything from market analysis to property management. This tutorial discusses AI's role in improving decision-making and efficiency."
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
-        },
-        { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key points',
+          description: 'AI-driven real estate valuations: Utilizing machine learning to estimate property values accurately. Predictive analytics for market trends: Forecasting future market movements based on data analysis Automating property management using AI: Streamlining tasks like tenant communication and maintenance requests.'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Virtual Reality (VR) in Real Estate', 
+          description: 'Virtual Reality (VR) technology enables immersive property tours and enhanced marketing strategies.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'VR tour demonstration.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Virtual Reality (VR) technology enables immersive property tours and enhanced marketing strategies. This tutorial highlights how VR is changing the way properties are presented and experienced.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
-        },
-        { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key points',
+          description: 'VR property tours and their impact on marketing: Offering potential buyers an immersive experience. Reducing physical site visits through immersive experiences: Allowing remote exploration of properties. Enhancing cross-border investments through virtual property viewing: Breaking geographical barriers for investors.'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Tokenization of Non-Traditional Assets', 
+          description: 'Tokenization is expanding beyond traditional real estate into diverse asset classes.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Tokenization case study examples.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Tokenization is expanding beyond traditional real estate into diverse asset classes. This tutorial examines how non-traditional assets are being tokenized, creating new investment opportunities.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
-        },
-        { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key points',
+          description: 'Tokenization of commercial and industrial properties: Opening up new markets for investors. Farmland and infrastructure investment through tokenization: Diversifying portfolios with unique assets. Benefits of diversifying with non-traditional assets: Enhancing risk management and returns.'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Impact of 5G on Real Estate Transactions', 
+          description: 'The advent of 5G technology is set to enhance the speed and efficiency of real estate transactions.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: '5G impact simulation.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'The advent of 5G technology is set to enhance the speed and efficiency of real estate transactions. This tutorial focuses on how 5G enables faster communication and data processing.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
-        },
-        { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key points',
+          description: 'How 5G enhances real-time property transactions: Improving response times and accessibility. Speeding up blockchain and smart contract execution with 5G: Enabling instant confirmations. Improving property data accessibility through faster networks: Streamlining information exchange.'
         },
       ],
       [
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'Green and Sustainable Real Estate Tokenization', 
+          description: 'Tokenization supports investment in sustainable real estate projects, aligning with global environmental goals.'
         },
         { 
           text: 'interactive element', 
-          description: 'Description for Card 2'
+          description: 'Sustainability metrics tracker.'
         },
         { 
-          text: 'Card 1 content', 
-          description: 'Description for Card 1'
+          text: 'explanation', 
+          description: 'Tokenization supports investment in sustainable real estate projects, aligning with global environmental goals. This tutorial discusses how green initiatives are being integrated into tokenization.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'key points',
+          description: 'Impact of tokenizing green real estate projects: Encouraging eco-friendly developments. Incentives for investing in sustainable developments: Offering benefits to green investors. How blockchain can track sustainability metrics: Ensuring transparency in eco-friendly investments.'
+        },
+      ],
+      [
+        { 
+          text: 'Cross-Border Real Estate Investments via Tokenization', 
+          description: 'Tokenization simplifies cross-border real estate investments, making them more accessible and secure.'
         },
         { 
-          text: 'interactive element',
-          description: 'Description for Card 2'
+          text: 'interactive element', 
+          description: 'Cross-border investment calculator.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Tokenization simplifies cross-border real estate investments, making them more accessible and secure. This tutorial highlights the benefits and considerations of global investment through tokenization.'
+        },
+        { 
+          text: 'key points',
+          description: 'How tokenization simplifies cross-border real estate investments: Reducing barriers and complexities. Legal and tax considerations for international investors: Understanding regulatory requirements. Benefits of fractional ownership across borders: Allowing global participation in real estate markets.'
+        },
+      ],
+      [
+        { 
+          text: 'Regulatory Evolution in Tokenization', 
+          description: 'As tokenization becomes more mainstream, regulations are evolving worldwide.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Regulatory landscape comparison chart.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'As tokenization becomes more mainstream, regulations are evolving worldwide. This tutorial examines how different jurisdictions are adapting to the rise of tokenized real estate.'
+        },
+        { 
+          text: 'key points',
+          description: 'Global regulatory approaches to tokenization: Comparing frameworks in various countries. Future trends in tokenization laws and frameworks: Anticipating changes in regulations. How regulation shapes the future of real estate investments: Understanding compliance and security.'
+        },
+      ],
+      [
+        { 
+          text: 'Future of Property Management Technology', 
+          description: 'Innovations like IoT and AI are transforming property management practices.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Property management tech demo.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Innovations like IoT and AI are transforming property management practices. This tutorial discusses how technology is enhancing efficiency and transparency for landlords and tenants.'
+        },
+        { 
+          text: 'key points',
+          description: 'AI and IoT in property management: Automating and optimizing operations. Blockchain for transparent lease agreements: Increasing trust in tenant landlord relationships. Automating maintenance and rent payments: Streamlining financial transactions.'
+        },
+      ],
+      [
+        { 
+          text: 'Blockchain Integration with Traditional Financial Systems', 
+          description: 'Innovations like IoT and AI are transforming property management practices.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Property management tech demo.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'The integration of blockchain with traditional finance is revolutionizing transaction processes. This tutorial covers the implications of blockchain for real estate financing and operations.'
+        },
+        { 
+          text: 'key points',
+          description: 'Integration of blockchain with traditional banking and payment systems: Enhancing transaction security. Benefits of blockchain for real estate loans and mortgages: Streamlining financing processes. How blockchain ensures secure cross-border transactions: Reducing fraud and risk.'
+        },
+      ],
+      [
+        { 
+          text: 'Interactive Discussion: Visioning the Future of Real Estate', 
+          description: 'Engage in an interactive discussion about the future of real estate, exploring emerging technologies and innovations.'
+        },
+        { 
+          text: 'interactive element', 
+          description: 'Discussion forum or live poll.'
+        },
+        { 
+          text: 'explanation', 
+          description: 'Engage in an interactive discussion about the future of real estate, exploring emerging technologies and innovations. Participants will share insights and ideas on market evolution.'
+        },
+        { 
+          text: 'key points',
+          description: 'Innovations that could shape real estate in the next decade: Predicting future trends. How investors can prepare for future trends: Adapting strategies to new realities. Identifying emerging opportunities in tokenized real estate: Spotting potential investments.'
         },
       ],
     ],
   },
 ] 
+
+export const quizzes = [
+  {
+    topics: [
+      [{topic: 'reinforce learning through an interactive quiz'}],
+      [{topic: 'reinforce learning through an interactive quiz'}],
+      [{topic: 'reinforce learning through an interactive quiz'}],
+      [{topic: 'reinforce learning through an interactive quiz'}],
+      [{topic: 'reinforce learning through an interactive quiz'}],
+    ],
+    questions: [
+      [{options: ''}]
+    ]
+  }
+]

@@ -5,6 +5,8 @@ import Header from '@/components/Header';
 import { levels } from '@/data'; // Ensure `levels` is properly imported
 import Button from '@/components/ui/Button';
 import Navbar from '@/components/Navbar';
+import { useState } from 'react';
+import Quiz from '@/components/Quiz'; // Import the Quiz component
 
 const TutorialCardPage = () => {
   const params = useParams();
@@ -12,26 +14,23 @@ const TutorialCardPage = () => {
   const tutorialIndex = params.tutorialIndex;
   const cardIndex = params.cardIndex;
 
-  // Convert query parameters to numbers safely
   const tutorialIdx = tutorialIndex ? Number(tutorialIndex) : NaN;
   const cardIdx = cardIndex ? Number(cardIndex) : NaN;
 
-   // Validate indices
+  const [showQuiz, setShowQuiz] = useState(false);
+
   if (isNaN(tutorialIdx) || isNaN(cardIdx) || tutorialIdx <= 0 || cardIdx <= 0) {
     return <p className="text-center">Invalid level or card index.</p>;
   }
 
-  // Access the current level
-  const level = levels[tutorialIdx - 1]; // Adjust for 0-based indexing
+  const level = levels[tutorialIdx - 1];
   if (!level) {
     return <p className="text-center">Level not found.</p>;
   }
-  
-  // Calculate previous and next level indices
+
   const previousLevelIndex = cardIdx > 1 ? cardIdx - 1 : null;
   const nextLevelIndex = cardIdx < level.cards.length ? cardIdx + 1 : null;
 
-  // Navigation functions
   const goToPreviousLevel = () => {
     if (previousLevelIndex) {
       router.push(`/tutorial/${tutorialIdx}/level/${previousLevelIndex}`);
@@ -44,67 +43,67 @@ const TutorialCardPage = () => {
     }
   };
 
+  const handleQuizClick = () => {
+    setShowQuiz(true);
+  };
+
   return (
     <main className="page text-color">
       <Header tutorialIndex={tutorialIdx} cardIndex={cardIdx} />
-      <div className="w-full mt-16">
-        {/* Map over all cards and display them */}
-        {/*  <div className="w-full space-y-4">
-          {level.cards.map((cardGroup, groupIdx) => (
-            <div key={groupIdx} className="space-y-4">
-              {cardGroup.map((card, cardIdx) => (
-                <div key={cardIdx} className="box rounded-sm shadow-md">
-                  <p className="top-text fade-in">
-                    {card.text}
-                  </p>
-                  <p className='fade-in ash-text'>
-                    {card.description}
-                  </p>
-                </div>
-              ))}
+      <div className="w-full mt-16 overflow-y-scroll">
+        {!showQuiz ? (
+          <div className="w-full space-y-4 fade-in">
+            {level.cards[cardIdx - 1].map((card, groupIdx) => (
+              <div key={groupIdx} className="space-y-4 box rounded-sm shadow-md">
+                <p className="top-text">{card.text}</p>
+                <p className="ash-text">{card.description}</p>
+              </div>
+            ))}
+            <div className="flex justify-center mt-4">
+              <Button
+                name="Take a quick quiz"
+                onClick={handleQuizClick}
+                className="transition-all duration-1000 w-full quiz-button shadow"
+              />
             </div>
-          ))}
-        </div> */}
-        <div className="w-full space-y-4">
-          {level.cards[cardIdx -1].map((card, groupIdx) => (
-            <div key={groupIdx} className="space-y-4 box rounded-sm shadow-md">
-                  <p className="top-text fade-in">
-                    {card.text}
-                  </p>
-                  <p className='fade-in ash-text'>
-                    {card.description}
-                  </p>
-            </div>
-          ))}
-        </div>
+          </div>
+        ) : (
+          <Quiz /> // Embed the Quiz component here
+        )}
       </div>
-        <div className="w-full grid grid-cols-2 justify-items-center gap-3 mt-4">
-          {/* Next Button */}
-          {cardIdx > 0 && (
-            <Button
-              name="Previous"
-              onClick={goToPreviousLevel}
-              className={`${cardIdx === 0 ? 'hidden' 
-                : cardIdx === 10 ? 'col-span-2' 
-                : 'col-span-1'}  
-                transition-all duration-1000 w-full grid tier-button shadow
-              `}
-            />
-              )}
-              {/* Next Button */}
-              {cardIdx >= 0 && (
-                <Button
-                  name="Next"
-                  onClick={goToNextLevel}
-                  className={`${cardIdx === 10
-                    ? 'hidden' 
-                    : cardIdx === 0
-                    ? 'col-span-2' : 'col-span-1'} 
-                    transition-all duration-1000 w-full grid tier-button shadow
-                  `}
-                />
-              )}
-        </div>
+      <div className="w-full grid grid-cols-2 justify-items-center gap-3 mt-4">
+        {!showQuiz ? (
+          <>
+            {cardIdx > 0 && (
+              <Button
+                name="Previous"
+                src='/tutorial/rocket.svg'
+                width={15}
+                height={15}
+                reverse
+                onClick={goToPreviousLevel}
+                className={`${cardIdx === 0 ? 'hidden' : cardIdx === level.cards.length ? 'col-span-2' : 'col-span-1'}  
+                    transition-all duration-1000 w-full grid tier-button shadow`}
+              />
+            )}
+            {cardIdx >= 0 && (
+              <Button
+                name="Next"
+                src='/tutorial/rocket.svg'
+                width={15}
+                height={15}
+                reverse
+                onClick={goToNextLevel}
+                className={`${cardIdx === level.cards.length
+                  ? 'hidden' 
+                  : cardIdx === 0
+                  ? 'col-span-2' : 'col-span-1'} 
+                      transition-all duration-1000 w-full grid tier-button shadow`}
+              />
+            )}
+          </>
+        ) : null}
+      </div>
       <Navbar />
     </main>
   );
