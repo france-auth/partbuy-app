@@ -42,14 +42,14 @@ const Quiz = () => {
 
   return (
     <div className="w-full mx-auto bg-black text-color fade-in">
-      <p className="text-start top-text">
+      <p className="box text-start top-text">
         {quizCards[activeCard].title}
       </p>
-      <div className="mt-6 box ">
-        <p className="text-center font-medium">
+      <div className="mt-4 box ">
+        <p className="text-center roboto font-bold text-xs leading-[14.06px] text-color">
           {quizCards[activeCard].questions[currentQuestion].question}
         </p>
-        <div className="mt-4 space-y-2">
+        <div className="mt-4 space-y-2 ash-text">
           {quizCards[activeCard].questions[currentQuestion].options.map(
             (option, index) => (
               <Button
@@ -82,7 +82,7 @@ const Quiz = () => {
         <Button
           name="NEXT QUESTION"
           onClick={handleNextQuestion}
-          className=" transition-all duration-1000 w-full tier-button"
+          className=" transition-all duration-1000 w-full dashboard-button mt-4"
         />
       </div>
     </div>
