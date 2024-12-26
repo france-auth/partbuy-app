@@ -42,7 +42,7 @@ const Tier = () => {
   return (
     <main className="page">
       <Header name="Tiers" marketplace="Exit Marketplace" />
-      <div className="flex flex-col w-full gap-4">
+      <div className="flex flex-col w-full gap-4 mt-16">
         {/* Current Tier Section */}
         {tierIndex >= 0 ? (<div className="box items-center gap-4">
           <p className="top-text">{tierIndex === -1 && 'your current tier'}</p>

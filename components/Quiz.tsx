@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { quizCards } from "@/data";
 import Button from "./ui/Button"; // Adjust the import path based on your project structure
 
 const Quiz = () => {
@@ -37,69 +38,7 @@ const Quiz = () => {
     }
   };
 
-  interface Question {
-    id: number;
-    question: string;
-    options: string[];
-    correctAnswer: number; // Index of the correct answer
-  }
-
-  interface QuizCard {
-    cardId: number;
-    title: string;
-    questions: Question[];
-  }
-
-  const quizCards: QuizCard[] = [
-    {
-      cardId: 1,
-      title: "REINFORCE LEARNING THROUGH AN INTERACTIVE QUIZ",
-      questions: [
-        {
-          id: 1,
-          question: "What is a Real-World Asset (RWA)?",
-          options: [
-            "Digital currencies",
-            "Physical, tangible assets like real estate",
-            "Virtual reality properties",
-          ],
-          correctAnswer: 1,
-        },
-        {
-          id: 2,
-          question: "What is blockchain?",
-          options: [
-            "A digital ledger",
-            "A type of database",
-            "A cryptocurrency",
-          ],
-          correctAnswer: 0,
-        },
-      ],
-    },
-    {
-      cardId: 2,
-      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
-      questions: [
-        {
-          id: 1,
-          question: "What is Bitcoin?",
-          options: [
-            "A type of digital asset",
-            "A payment network",
-            "Both a and b",
-          ],
-          correctAnswer: 2,
-        },
-        {
-          id: 2,
-          question: "Which of these is a cryptocurrency?",
-          options: ["Ethereum", "Visa", "PayPal"],
-          correctAnswer: 0,
-        },
-      ],
-    },
-  ];
+  
 
   return (
     <div className="w-full mx-auto bg-black text-color fade-in">
@@ -143,7 +82,7 @@ const Quiz = () => {
         <Button
           name="NEXT QUESTION"
           onClick={handleNextQuestion}
-          className="py-2 px-6 bg-blue-500 text-white rounded-md hover:bg-blue-600"
+          className=" transition-all duration-1000 w-full tier-button"
         />
       </div>
     </div>

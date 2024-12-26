@@ -2281,7 +2281,7 @@ export const levels: Level[] = [
     ],
   },
 ] 
-
+/* 
 export const quizzes = [
   {
     topics: [
@@ -2295,4 +2295,69 @@ export const quizzes = [
       [{options: ''}]
     ]
   }
-]
+] */
+
+
+  interface Question {
+    id: number;
+    question: string;
+    options: string[];
+    correctAnswer: number; // Index of the correct answer
+  }
+
+  interface QuizCard {
+    cardId: number;
+    title: string;
+    questions: Question[];
+  }
+
+export const quizCards: QuizCard[] = [
+    {
+      cardId: 1,
+      title: "REINFORCE LEARNING THROUGH AN INTERACTIVE QUIZ",
+      questions: [
+        {
+          id: 1,
+          question: "What is a Real-World Asset (RWA)?",
+          options: [
+            "Digital currencies",
+            "Physical, tangible assets like real estate",
+            "Virtual reality properties",
+          ],
+          correctAnswer: 1,
+        },
+        {
+          id: 2,
+          question: "What is blockchain?",
+          options: [
+            "A digital ledger",
+            "A type of database",
+            "A cryptocurrency",
+          ],
+          correctAnswer: 0,
+        },
+      ],
+    },
+    {
+      cardId: 2,
+      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
+      questions: [
+        {
+          id: 1,
+          question: "What is Bitcoin?",
+          options: [
+            "A type of digital asset",
+            "A payment network",
+            "Both a and b",
+          ],
+          correctAnswer: 2,
+        },
+        {
+          id: 2,
+          question: "Which of these is a cryptocurrency?",
+          options: ["Ethereum", "Visa", "PayPal"],
+          correctAnswer: 0,
+        },
+      ],
+    },
+  ];
