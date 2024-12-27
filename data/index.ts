@@ -2308,7 +2308,7 @@ export const quizzes = [
   interface QuizCard {
     cardId: number;
     title: string;
-    questions: Question[];
+    questions: Question[][];
   }
 
 export const quizCards: QuizCard[] = [
@@ -2316,7 +2316,8 @@ export const quizCards: QuizCard[] = [
       cardId: 1,
       title: "REINFORCE LEARNING THROUGH AN INTERACTIVE QUIZ",
       questions: [
-        {
+        [
+          {
           id: 1,
           question: "What is a Real-World Asset (RWA)?",
           options: [
@@ -2325,24 +2326,353 @@ export const quizCards: QuizCard[] = [
             "Virtual reality properties",
           ],
           correctAnswer: 1,
-        },
-        {
+          }
+        ],
+        [
+          {
           id: 2,
-          question: "What is blockchain?",
+          question: "What does tokenization do?",
           options: [
-            "A digital ledger",
-            "A type of database",
-            "A cryptocurrency",
+            "Converts assets into digital tokens",
+            "Increases the physical size of an asset",
+            "Reduces the value of an asset",
           ],
           correctAnswer: 0,
-        },
+          }
+        ],
+        [
+          {
+          id: 3,
+          question: "Why is liquidity important in real estate?",
+          options: [
+            "It increases the physical size of the property",
+            "It makes it easier to buy and sell assets quickly",
+            "It decreases the property’s value",
+          ],
+          correctAnswer: 1,
+          }
+        ],
+        [
+          {
+          id: 4,
+          question: "How does blockchain contribute to tokenization?",
+          options: [
+            "By securing and recording transactions",
+            "By creating more physical assets",
+            "By decreasing transparency",
+          ],
+          correctAnswer: 0,
+          }
+        ],
+        [
+          {
+          id: 5,
+          question: "What is fractional ownership?",
+          options: [
+            "Owning an entire property",
+            "Owning a part of an assets",
+            "Renting a property",
+          ],
+          correctAnswer: 1,
+          }
+        ],
       ],
     },
     {
       cardId: 2,
+      title: "Test Your Knowledge on PartBuy and Its Platform",
+      questions: [
+        [{
+          id: 1,
+          question: "What is the primary mission of PartBuy?",
+          options: [
+            "To sell luxury homes",
+            "To democratize real estate investment through tokenization",
+            "To build physical properties",
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 2,
+          question: "How can you buy a share of a property on PartBuy?",
+          options: [
+            "By Purchasing the whole property",
+            "By purchasing digital tokens representing fractional ownership",
+            "By renting the property"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 3,
+          question: "Which of the following is a key security feature of PartBuy?",
+          options: [
+            "Blockchain and smart contracts",
+            "Physical vaults",
+            "Paper records"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 4,
+          question: "What can you do in the PartBuy secondary market?",
+          options: [
+            "Trade your property tokens",
+            "Apply for a loan",
+            "Get a property tour"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 5,
+          question: "How does PartBuy differ from traditional real estate investing?",
+          options: [
+            "It’s more accessible and offers liquidity",
+            "IIt requires more paperwork",
+            "it needs physical property visits"
+          ],
+          correctAnswer: 0,
+        }],
+      ],
+    },
+    {
+      cardId: 3,
+      title: "Interactive Quiz: Blockchain Basics",
+      questions: [
+        [{
+          id: 1,
+          question: "What is blockchain technology?",
+          options: [
+            "A centralized database",
+            "A decentralized digital ledger",
+            "A physical document storage",
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 2,
+          question: "How does blockchain enhance investment security?",
+          options: [
+            "By allowing manual record changes",
+            "By using cryptographic techniques",
+            "By centralizing data"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 3,
+          question: "How does blockchain enhance investment security?",
+          options: [
+            "By allowing manual record changes",
+            "By using cryptographic techniques",
+            "By centralizing data"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 4,
+          question: "What is a key feature of decentralization?",
+          options: [
+            "Increased control by one entity",
+            "Distribution of control among participants",
+            "More manual processes"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 5,
+          question: "What is a smart contract?",
+          options: [
+            "A physical contract",
+            "A self-executing agreement coded in blockchain",
+            "A manual agreement needing intermediaries"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 6,
+          question: "What is the difference between public and private blockchains?",
+          options: [
+            "Public blockchains are centralized",
+            "Private blockchain are open to everyone",
+            "Public blockchain are open to everyone"
+          ],
+          correctAnswer: 2,
+        }],
+      ],
+    },
+    {
+      cardId: 4,
+      title: "Interactive Quiz: Blockchain Basics",
+      questions: [
+        [{
+          id: 1,
+          question: "What is smart contract?",
+          options: [
+            "A contract thata requuires a lawyer",
+            "A self-executing contract with terms written in code",
+            "A type of rental agreement",
+          ],
+          correctAnswer: 2,
+        }],
+        [{
+          id: 2,
+          question: "How do smart contract execute actions?",
+          options: [
+            "Manually by a lawyer",
+            "Automatically when conditions are met",
+            "A type of rental agreements"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 3,
+          question: "What is a key advantage of smart contracts over traditional contracts",
+          options: [
+            "They require more paperwork",
+            "They are more efficient and cost effective",
+            "They are harder to understand"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 4,
+          question: "Which of the following is a challenge faced by smart contracts",
+          options: [
+            "They are always legally binding",
+            "Coding errors can create vulnerabilities",
+            "They are always fully automated"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 5,
+          question: "What is the primary purpose of a smart contract in real estate",
+          options: [
+            "To increase transaction cost",
+            "To automate and secure transactions",
+            "To eliminate real estate agents"
+          ],
+          correctAnswer: 1,
+        }],
+      ],
+    },
+    {
+      cardId: 5,
+      title: "Interactive Quiz: Advanced Blockchain Concepts",
+      questions: [
+        [{
+          id: 1,
+          question: "What is a consensus mechanism?",
+          options: [
+            "A method to agree on transaction validity",
+            "A way to mine cryptocurrency",
+            "A type of blockchain",
+          ],
+          correctAnswer: 2,
+        }],
+        [{
+          id: 2,
+          question: "Which of the following is true about Proof of Stake?",
+          options: [
+            "Requires significant energy",
+            "Validators are chosen based on their stake",
+            "Involves solving complex problems"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 3,
+          question: "What do miners do in a blockchain network?",
+          options: [
+            "Create new cryptocurrencies",
+            "Validate transactions and add them to the blockchain",
+            "Store user data"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 4,
+          question: "What do gas fees relate to?",
+          options: [
+            "Costs of executing transactions",
+            "The physical space of a blockchain",
+            "The number of tokens in circulation"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 5,
+          question: "What does interoperability between blockchains allow?",
+          options: [
+            "Forks to happen",
+            "Different blockchains to communicate with each other",
+            "Single-chain transactions"
+          ],
+          correctAnswer: 1,
+        }],
+      ],
+    },
+    {
+      cardId: 6,
+      title: "Interactive Quiz: Real Estate Tokenization",
+      questions: [
+        [{
+          id: 1,
+          question: "Which token standard allows for both fungible and non-fungible tokens?",
+          options: [
+            "ERC-20",
+            "ERC-721",
+            "ERC-1155",
+          ],
+          correctAnswer: 2,
+        }],
+        [{
+          id: 2,
+          question: "What role does an SPV play in real estate tokenization?",
+          options: [
+            "Holds the tokenized property legally",
+            "Manages blockchain transactions",
+            "Creates liquidity pools"
+          ],
+          correctAnswer: 2,
+        }],
+        [{
+          id: 3,
+          question: "How do liquidity pools benefit tokenized assets?",
+          options: [
+            "They offer loans for property purchases",
+            "They provide liquidity for easier trading",
+            "They manage real estate assets"
+          ],
+          correctAnswer: 1,
+        }],
+        [{
+          id: 4,
+          question: "Which token standard is typically used for fractional ownership?",
+          options: [
+            "ERC-20",
+            "ERC-721",
+            "ERC-1155"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 5,
+          question: "Why is it important to follow regulations when tokenizing real estate?",
+          options: [
+            "To avoid legal consequences",
+            "To speed up blockchain processes",
+            "To increase property value"
+          ],
+          correctAnswer: 0,
+        }],
+      ],
+    },
+    {
+      cardId: 7,
       title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
       questions: [
-        {
+        [{
           id: 1,
           question: "What is Bitcoin?",
           options: [
@@ -2351,13 +2681,79 @@ export const quizCards: QuizCard[] = [
             "Both a and b",
           ],
           correctAnswer: 2,
-        },
-        {
+        }],
+        [{
           id: 2,
           question: "Which of these is a cryptocurrency?",
           options: ["Ethereum", "Visa", "PayPal"],
           correctAnswer: 0,
-        },
+        },]
+      ],
+    },
+    {
+      cardId: 8,
+      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
+      questions: [
+        [{
+          id: 1,
+          question: "What is Bitcoin?",
+          options: [
+            "A type of digital asset",
+            "A payment network",
+            "Both a and b",
+          ],
+          correctAnswer: 2,
+        }],
+        [{
+          id: 2,
+          question: "Which of these is a cryptocurrency?",
+          options: ["Ethereum", "Visa", "PayPal"],
+          correctAnswer: 0,
+        },]
+      ],
+    },
+    {
+      cardId: 9,
+      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
+      questions: [
+        [{
+          id: 1,
+          question: "What is Bitcoin?",
+          options: [
+            "A type of digital asset",
+            "A payment network",
+            "Both a and b",
+          ],
+          correctAnswer: 2,
+        }],
+        [{
+          id: 2,
+          question: "Which of these is a cryptocurrency?",
+          options: ["Ethereum", "Visa", "PayPal"],
+          correctAnswer: 0,
+        },]
+      ],
+    },
+    {
+      cardId: 10,
+      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
+      questions: [
+        [{
+          id: 1,
+          question: "What is Bitcoin?",
+          options: [
+            "A type of digital asset",
+            "A payment network",
+            "Both a and b",
+          ],
+          correctAnswer: 2,
+        }],
+        [{
+          id: 2,
+          question: "Which of these is a cryptocurrency?",
+          options: ["Ethereum", "Visa", "PayPal"],
+          correctAnswer: 0,
+        },]
       ],
     },
   ];
