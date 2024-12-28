@@ -49,7 +49,7 @@ const TutorialCardPage = () => {
 
   return (
     <main className="page text-color">
-      <Header tutorialIndex={tutorialIdx} cardIndex={cardIdx} />
+      <Header tutorialIndex={tutorialIdx} cardIndex={showQuiz ? 10 : cardIdx} />
       <div className="w-full mt-16 overflow-y-scroll">
         {!showQuiz ? (
           <div className="w-full space-y-4 fade-in">

@@ -2670,90 +2670,326 @@ export const quizCards: QuizCard[] = [
     },
     {
       cardId: 7,
-      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
+      title: "Interactive Quiz: Advanced Real Estate Investment Strategies",
       questions: [
         [{
           id: 1,
-          question: "What is Bitcoin?",
+          question: "What is the primary benefit of portfolio diversification in real estate?",
           options: [
-            "A type of digital asset",
-            "A payment network",
-            "Both a and b",
+            "Increased risk",
+            "Reduced volatility",
+            "Higher taxes",
           ],
           correctAnswer: 2,
         }],
         [{
           id: 2,
-          question: "Which of these is a cryptocurrency?",
-          options: ["Ethereum", "Visa", "PayPal"],
+          question: "How can fractional ownership enhance returns?",
+          options: [
+            "By limiting investments to one property",
+            "By allowing access to high-value properties",
+            "By increasing the required capital"
+          ],
           correctAnswer: 0,
-        },]
+        }],
+        [{
+          id: 3,
+          question: "What does leverage do in real estate investing?",
+          options: [
+            "Decreases potential profits",
+            "Amplifies investment returns",
+            "Eliminates risks"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 4,
+          question: "What is a major risk associated with tokenized real estate?",
+          options: [
+            "Increased liquidity",
+            "Increased liquidity",
+            "Lower capital investment"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 5,
+          question: "How does tokenized real estate differ from REITs?",
+          options: [
+            "Greater flexibility and control",
+            "Requires higher capital investment",
+            "Limited market access"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 6,
+          question: "What tax consideration is important for tokenized real estate investors?",
+          options: [
+            "All investments are tax-exempt",
+            "Capital gains tax and local regulations",
+            "Only income tax applies"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 7,
+          question: "What is yield farming?",
+          options: [
+            "A method of producing agricultural yield",
+            "Lending tokens to earn rewards",
+            "A type of real estate investment trust"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 8,
+          question: "How can data analytics assist investors?",
+          options: [
+            "By providing random property data",
+            "By analyzing market trends and informing decisions",
+            "By eliminating the need for research"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 9,
+          question: "Why is exit planning important?",
+          options: [
+            "To maximize profits or minimize losses",
+            "It is optional and not necessary",
+            "It complicates the investment process"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 10,
+          question: "What is a potential advantage of investing in global real estate markets?",
+          options: [
+            "Limited diversification opportunities",
+            "Access to unique investment opportunities",
+            "Higher transaction fees"
+          ],
+          correctAnswer: 0,
+        }],
       ],
     },
     {
       cardId: 8,
-      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
+      title: "Interactive Quiz: Tokenized Real Estate Markets",
       questions: [
         [{
           id: 1,
-          question: "What is Bitcoin?",
+          question: "What is fractional ownership in real estate?",
           options: [
-            "A type of digital asset",
-            "A payment network",
-            "Both a and b",
+            "Owning a small part of a property",
+            "Owning the entire property",
+            "Renting a property",
           ],
           correctAnswer: 2,
         }],
         [{
           id: 2,
-          question: "Which of these is a cryptocurrency?",
-          options: ["Ethereum", "Visa", "PayPal"],
+          question: "What is one advantage of tokenized real estate over traditional real estate?",
+          options: [
+            "Increased liquidity",
+            "Higher transaction costs",
+            "Longer selling times"
+          ],
           correctAnswer: 0,
-        },]
+        }],
+        [{
+          id: 3,
+          question: "How does tokenization help in diversifying real estate investments?",
+          options: [
+            "By allowing investment in multiple properties with smaller amounts of capital",
+            "By restricting investors to one property",
+            "By increasing upfront capital requirements"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 4,
+          question: "What is the purpose of the secondary market in tokenized real estate?",
+          options: [
+            "To buy and sell property tokens after their initial sale",
+            "To purchase entire properties",
+            "To lock in investments permanently"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 5,
+          question: "What is one challenge of tokenized real estate markets?",
+          options: [
+            "Complete market stability",
+            "Regulatory uncertainty",
+            "Lack of liquidity"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 6,
+          question: "What is the primary benefit of tokenization in real estate?",
+          options: [
+            "Greater liquidity",
+            "Increased transaction times",
+            "Higher capital requirements"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 7,
+          question: "How do smart contracts enhance tokenized transactions?",
+          options: [
+            "They eliminate the need for property inspections",
+            "They automate and secure transactions",
+            "They increase transaction fees"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 8,
+          question: "Why is understanding local regulations important for tokenized real estate investments?",
+          options: [
+            "It ensures compliance and protects investors",
+            "It simplifies the buying process",
+            "It increases investment costs"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 9,
+          question: "What challenge is commonly faced in tokenized real estate markets?",
+          options: [
+            "Consistent market stability",
+            "High liquidity",
+            "Market volatility"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 10,
+          question: "What does the process of buying tokenized real estate typically begin with?",
+          options: [
+            "Listing property for sale",
+            "Completing KYC requirements",
+            "Conducting property inspections"
+          ],
+          correctAnswer: 0,
+        }],
       ],
     },
     {
       cardId: 9,
-      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
+      title: "interactive quiz: Legal and Compliance Aspects of Tokenized Real Estate (Dubai & UAE",
       questions: [
         [{
           id: 1,
-          question: "What is Bitcoin?",
+          question: "How does Dubai’s regulatory framework support tokenized real estate?",
           options: [
-            "A type of digital asset",
-            "A payment network",
-            "Both a and b",
+            "It offers no legal recognition.",
+            "It integrates blockchain into real estate laws.",
+            "It forbids all digital transactions.",
           ],
           correctAnswer: 2,
         }],
         [{
           id: 2,
-          question: "Which of these is a cryptocurrency?",
-          options: ["Ethereum", "Visa", "PayPal"],
+          question: "What legal body regulates securities in the UAE?",
+          options: [
+            "The UAE Stock Exchange",
+            "Dubai Land Department", 
+            "UAE Securities and Commodities Authority (SCA)"
+          ],
           correctAnswer: 0,
-        },]
+        }],
+        [{
+          id: 3,
+          question: "What tax advantage does Dubai offer for tokenized real estate investors?",
+          options: [
+            "No capital gains tax",
+            "No VAT",
+            "No KYC requirements"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 4,
+          question: "What legal structure is often used to tokenize real estate in Dubai?",
+          options: [
+            "SPV (Special Purpose Vehicle)",
+            "Joint-stock company",
+            "Offshore account"
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 5,
+          question: "How are smart contracts viewed under Dubai law?",
+          options: [
+            "They are illegal.",
+            "They are recognized but their enforceability depends on the jurisdiction.",
+            "They can only be used for small transactions."
+          ],
+          correctAnswer: 0,
+        }],
       ],
     },
     {
       cardId: 10,
-      title: "TEST YOUR KNOWLEDGE ON CRYPTOCURRENCY",
+      title: "Interactive Quiz: Future Innovations and the Real Estate Ecosystem",
       questions: [
         [{
           id: 1,
-          question: "What is Bitcoin?",
+          question: "How is AI impacting real estate valuation?",
           options: [
-            "A type of digital asset",
-            "A payment network",
-            "Both a and b",
+            "By replacing appraisers.",
+            "Through data-driven insights and predictions.",
+            "By making manual processes more complex.",
           ],
           correctAnswer: 2,
         }],
         [{
           id: 2,
-          question: "Which of these is a cryptocurrency?",
-          options: ["Ethereum", "Visa", "PayPal"],
+          question: "What advantage does VR provide in property marketing?",
+          options: [
+            "It reduces the need for photographs.",
+            "It allows for immersive virtual tours of properties.",
+            "It eliminates the need for real estate agents."
+          ],
           correctAnswer: 0,
-        },]
+        }],
+        [{
+          id: 3,
+          question: "Why is tokenization of non-traditional assets significant?",
+          options: [
+            "It restricts investment opportunities.",
+            "It diversifies investor portfolios with unique asset classes.",
+            "It complicates asset ownership."
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 4,
+          question: "How does 5G technology enhance real estate transactions?",
+          options: [
+            "By slowing down communication.",
+            "By improving speed and data accessibility.",
+            "By making transactions more complex."
+          ],
+          correctAnswer: 0,
+        }],
+        [{
+          id: 5,
+          question: "What is a key benefit of integrating blockchain with traditional financial systems?",
+          options: [
+            "Increased transaction times.",
+            "Enhanced security and efficiency in transactions.",
+            "Greater reliance on intermediaries."
+          ],
+          correctAnswer: 0,
+        }],
       ],
     },
   ];

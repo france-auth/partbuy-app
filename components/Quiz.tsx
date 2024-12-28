@@ -8,7 +8,7 @@ import Button from "./ui/Button"; // Adjust the import path based on your projec
 const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0); // Tracks the question within the current card
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
-  const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
+  //const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
   const params = useParams();
   
   // Extract tutorial and card indices from params
@@ -22,11 +22,6 @@ const Quiz = () => {
   // Handle option selection
   const handleOptionSelect = (index: number) => {
     setSelectedOption(index);
-    if (currentQuestions) {
-      const isAnswerCorrect =
-        index === currentQuestions[currentQuestionIndex][0].correctAnswer;
-      setIsCorrect(isAnswerCorrect);
-    }
   };
 
   // Handle "Next Question" functionality
@@ -40,7 +35,6 @@ const Quiz = () => {
       // Move to the next question in the current card
       setCurrentQuestionIndex(currentQuestionIndex + 1);
       setSelectedOption(null);
-      setIsCorrect(null);
     } else {
       alert("You have completed all questions in this quiz!");
     }
@@ -51,46 +45,51 @@ const Quiz = () => {
       {currentCard ? (
         <>
           <p className="box text-start top-text">{currentCard.title}</p>
-          <div className="mt-4 box">
-            <p className="text-center roboto font-bold text-xs leading-[14.06px] text-color">
+          <div className="mt-4 box text-start ">
+            <p className="roboto font-bold text-xs leading-[14.06px] text-color">
               {currentQuestions[currentQuestionIndex][0].question}
             </p>
-            <div className="mt-4 space-y-2 ash-text">
+            <div className="mt-4 w-full flex flex-col justify-start ash-text">
               {currentQuestions[currentQuestionIndex][0].options.map(
                 (option, index) => (
-                  <Button
-                    key={index}
-                    name={option}
+                  <div 
+                    key={index} 
+                    className="w-full flex box-border items-center gap-2 py-3" 
                     onClick={() => handleOptionSelect(index)}
-                    className={`block border w-full py-2 px-4 rounded-md text-left transition-colors ${
-                      selectedOption === index
-                        ? isCorrect
-                          ? "border-green-500"
-                          : "border-red-500"
-                        : "border-gray-800 hover:border-gray-700"
-                    }`}
-                  />
+                  >
+                    <span className={`w-[12px] h-[12px] flex items-center justify-center border-2 border-[#3246DA] bg-black rounded-full`}>
+                      {selectedOption === index && (
+                        <span className="w-[6px] h-[6px] rounded-full bg-[#3246DA]" />
+                      )}
+                    </span>
+                    <div 
+                      className={`w-full`}
+                    >
+                      {option}
+                    </div>
+                  </div>
                 )
               )}
             </div>
           </div>
           <div className="mt-4 flex flex-col-reverse justify-between items-center">
             {/* Progress indicators */}
-            <div className="flex space-x-1">
+            <div className="flex space-x-2 mt-2">
               {currentQuestions.map((_, index) => (
                 <span
                   key={index}
-                  className={`w-2 h-2 rounded-full ${
-                    currentQuestionIndex === index
-                      ? "bg-blue-500"
-                      : "bg-gray-500"
-                  }`}
-                ></span>
+                  className={`w-[12px] h-[12px] flex items-center justify-center border-2 rounded-full ${currentQuestionIndex === index ? 'border-[#3246DA]' : 'border-black'}`}
+                >
+                  <span className="flex place-self-center w-[6px] h-[6px] rounded-full bg-[#3246DA]" />
+                </span>
               ))}
             </div>
             {/* Next button */}
             <Button
               name="NEXT QUESTION"
+              src="/tutorial/rocket.svg"
+              width={15}
+              height={15}
               onClick={handleNextQuestion}
               className="transition-all duration-1000 w-full dashboard-button mt-4"
             />

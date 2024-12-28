@@ -66,7 +66,7 @@
     @apply roboto uppercase font-bold text-xs leading-[14.06px] text-color text-start
   }
   .ash-text {
-    @apply text-[#B0B0B0] text-[10px] leading-[12.19px] montserrat
+    @apply text-[#B0B0B0] text-[10.3px] leading-[12.19px] montserrat
   }
   .property-overview-head {
     @apply uppercase font-semibold text-[8px] leading-[9.75px] text-color
