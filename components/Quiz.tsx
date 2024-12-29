@@ -74,12 +74,14 @@ const Quiz: React.FC<ShowQuiz> = ({ showQuiz }) => {
           )}
         </div>
       )}
-      <div className="text-color fade-in mt-14">
+      <div className="w-full text-color fade-in mt-14">
         {currentCard ? (
           !showSummary ? (
             <div className="w-full">
-              <p className="box text-start top-text">{currentCard.title}</p>
-              <div className="fade-in mt-4 box text-start">
+              <div className="box">
+              <p className="text-start top-text">{currentCard.title}</p>
+              </div>
+              <div className="w-full fade-in mt-4 box text-start">
                 <p className="roboto font-bold text-xs leading-[14.06px] text-color">
                   {currentQuestions[currentQuestionIndex][0].question}
                 </p>
