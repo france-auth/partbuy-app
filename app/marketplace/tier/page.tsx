@@ -61,8 +61,8 @@ const Tier = () => {
                   <Image
                     src={img}
                     alt={`${tier} tier image`}
-                    width={1}
-                    height={1}
+                    width={100}
+                    height={100}
                     quality={100}
                     className="w-52 h-auto"
                   />
@@ -81,8 +81,8 @@ const Tier = () => {
                   <Image
                     src={tierimages[currentIndex].img}
                     alt={`${tierimages[currentIndex].tier} tier image`}
-                    width={1}
-                    height={1}
+                    width={100}
+                    height={100}
                     quality={100}
                     className="w-52 h-auto"
                   />
