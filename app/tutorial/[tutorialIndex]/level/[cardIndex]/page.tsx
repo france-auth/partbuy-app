@@ -48,51 +48,46 @@ const TutorialCardPage = () => {
   };
 
   return (
-    <main className="page text-color">
-      <Header tutorialIndex={tutorialIdx} cardIndex={showQuiz ? 10 : cardIdx} />
-      <div className="w-full mt-16 overflow-y-scroll">
-        {!showQuiz ? (
-          <div className="w-full space-y-4 fade-in">
-            {level.cards[cardIdx - 1].map((card, groupIdx) => (
-              <div key={groupIdx} className="space-y-4 box rounded-sm shadow-md">
-                <p className="top-text">{card.text}</p>
-                <p className="ash-text">{card.description}</p>
-              </div>
-            ))}
+    <>
+      {!showQuiz ? (<main className='page text-color'>
+        <Header tutorialIndex={tutorialIdx} cardIndex={cardIdx} />
+          <div className="w-full mt-16 overflow-y-scroll">
+            <div className="w-full space-y-4 fade-in">
+              {level.cards[cardIdx - 1].map((card, groupIdx) => (
+                <div key={groupIdx} className="space-y-4 box rounded-sm shadow-md">
+                  <p className="top-text">{card.text}</p>
+                  <p className="ash-text">{card.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        ) : (
-          <Quiz /> // Embed the Quiz component here
-        )}
-      </div>
-      <div className="w-full grid grid-cols-2 justify-items-center gap-3 ">
-        {!showQuiz ? (
-          <>
-            {cardIdx > 1 && (
-              <Button
-                name="Previous"
-                src='/dashboard/buy-property.svg'
-                width={15}
-                height={15}
-                reverse
-                onClick={goToPreviousLevel}
-                className={`${cardIdx === 0 ? 'hidden' : cardIdx === level.cards.length ? 'col-span-2' : 'col-span-1'}  
-                transition-all duration-1000 w-full dashboard-button shadow`}
-              />
+          <div className="w-full grid grid-cols-2 justify-items-center gap-3 ">
+          {cardIdx > 1 && (
+            <Button
+            name="Previous"
+            src='/dashboard/buy-property.svg'
+            width={15}
+            height={15}
+            reverse
+            onClick={goToPreviousLevel}
+            className={`${cardIdx === 0 ? 'hidden' : cardIdx === level.cards.length ? 'col-span-2' : 'col-span-1'}  
+            transition-all duration-1000 w-full dashboard-button shadow`}
+          />
             )}
             {cardIdx > 0 && (
               <Button
-                name="Next"
-                src='/dashboard/buy-property.svg'
-                width={15}
-                height={15}
-                reverse
-                onClick={goToNextLevel}
-                className={`${cardIdx === level.cards.length
-                  ? 'hidden' 
-                  : cardIdx === 1
-                  ? 'col-span-2' : 'col-span-1'} 
-                  transition-all duration-1000 w-full dashboard-button shadow`}
-              />
+              name="Next"
+              src='/dashboard/buy-property.svg'
+              width={15}
+              height={15}
+              reverse
+              onClick={goToNextLevel}
+              className={`${cardIdx === level.cards.length
+                ? 'hidden' 
+                : cardIdx === 1
+                ? 'col-span-2' : 'col-span-1'} 
+                transition-all duration-1000 w-full dashboard-button shadow`}
+            />
             )}
             <Button
               name="Take a quick quiz"
@@ -103,11 +98,13 @@ const TutorialCardPage = () => {
               onClick={handleQuizClick}
               className="transition-all duration-1000 w-full grid col-span-2 dashboard-button shadow"
             />
-          </>
-        ) : null}
-      </div>
-      <Navbar />
-    </main>
+          </div>
+        <Navbar />
+      </main>
+      ) : (
+        <Quiz showQuiz={showQuiz} />
+      )}
+    </>
   );
 };
 

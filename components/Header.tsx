@@ -6,17 +6,37 @@ import { useParams } from "next/navigation";
 interface HeaderProp {
   name?: string;
   id?: number;
-  tutorialIndex?: number; // New prop for tutorial index
-  cardIndex?: number; // New prop for card index
+  tutorialIndex?: number; // Tutorial index
+  cardIndex?: number; // Card index
   marketplace?: string;
   filter?: string;
+  summary?: boolean; // Determines summary mode
 }
 
-const Header: React.FC<HeaderProp> = ({ name, id, tutorialIndex, cardIndex, marketplace, filter }) => {
-  const params = useParams(); // Access the dynamic route parameter
-  const dynamicId = params?.id || id; // Preserve your existing dynamicId logic
-  const marketplaceProp = marketplace;
+const Header: React.FC<HeaderProp> = ({ 
+  name, 
+  id, 
+  tutorialIndex, 
+  cardIndex, 
+  marketplace, 
+  filter, 
+  summary 
+}) => {
+  const params = useParams(); // Access dynamic route parameters
+  const dynamicId = params?.id || id; // Use dynamicId if available
 
+  // Conditional header content for summary
+  if (summary && tutorialIndex) {
+    return (
+      <div className="header2 fixed">
+        <p className="roboto font-bold text-gradient text-center text-base leading-[18.75px]">
+          {`Level ${tutorialIndex} - Summary`}
+        </p>
+      </div>
+    );
+  }
+
+  // Default header content
   return (
     <div className="header fixed">
       {/* Dynamic title logic */}
@@ -31,7 +51,7 @@ const Header: React.FC<HeaderProp> = ({ name, id, tutorialIndex, cardIndex, mark
       </p>
 
       {/* Conditional rendering for marketplace or placeholders */}
-      {marketplaceProp ? (
+      {marketplace ? (
         <Link href="/">
           <p className="auction-button underline">{marketplace}</p>
         </Link>
