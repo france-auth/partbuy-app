@@ -42,26 +42,24 @@ const Quiz: React.FC<ShowQuiz> = ({ showQuiz }) => {
       alert("Please select an answer before proceeding.");
       return;
     }
-
-    const currentQuestion = currentQuestions[currentQuestionIndex][0];
-    setAnswers((prevAnswers) => [
-      ...prevAnswers,
-      {
-        question: currentQuestion.question,
-        correctAnswer: String(currentQuestion.options[currentQuestion.correctAnswer]), // Ensure it's a string
-      },
-    ]);
-
-    if (currentQuestions && currentQuestionIndex < currentQuestions.length - 1) {
-      // Move to the next question in the current card
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-      setSelectedOption(null);
-    } else {
-      // Show the summary page after the last question
-      setShowSummary(true);
-    }
+  
+      const currentQuestion = currentQuestions[currentQuestionIndex][0];
+      setAnswers((prevAnswers) => [
+        ...prevAnswers,
+        {
+          question: currentQuestion.question,
+          correctAnswer: String(currentQuestion.options[currentQuestion.correctAnswer]),
+        },
+      ]);
+  
+      if (currentQuestions && currentQuestionIndex < currentQuestions.length - 1) {
+        setCurrentQuestionIndex(currentQuestionIndex + 1);
+        setSelectedOption(null);
+      } else {
+        setShowSummary(true);
+      }
   };
-
+  
   return (
     <main className="page text-color">
       {showQuiz && (
@@ -81,11 +79,11 @@ const Quiz: React.FC<ShowQuiz> = ({ showQuiz }) => {
               <div className="box">
               <p className="text-start top-text">{currentCard.title}</p>
               </div>
-              <div className="w-full fade-in mt-4 box text-start">
-                <p className="roboto font-bold text-xs leading-[14.06px] text-color">
+              <div className="w-full mt-4 box text-start">
+                <p className={`fade-in roboto font-bold text-xs leading-[14.06px] text-color`}>
                   {currentQuestions[currentQuestionIndex][0].question}
                 </p>
-                <div className="mt-4 w-full flex flex-col justify-start ash-text">
+                <div className={`fade-in mt-4 w-full flex flex-col justify-start ash-text`}>
                   {currentQuestions[currentQuestionIndex][0].options.map((option, index) => (
                     <div
                       key={index}

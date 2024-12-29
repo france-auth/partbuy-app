@@ -48,10 +48,10 @@
     @apply bg-[#121212] flex flex-col justify-center items-center w-full py-5 px-3 gap-4 gap-y-0 mt-16
   }
   .header {
-    @apply flex justify-between items-center mb-4 px-4 py-3 w-screen bg-[#121212]
+    @apply z-50 flex justify-between items-center mb-4 px-4 py-3 w-screen bg-[#121212]
   }
   .header2 {
-    @apply flex justify-center items-center mb-4 px-4 py-3 w-screen bg-[#121212]
+    @apply z-50 flex justify-center items-center mb-4 px-4 py-3 w-screen bg-[#121212]
   }
   .dashboard-button {
     @apply montserrat px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] xx:text-[8px] xr:text-[10px] leading-[12.19px] uppercase font-bold
