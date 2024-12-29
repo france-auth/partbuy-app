@@ -99,11 +99,11 @@ const TutorialCardPage = () => {
               className="transition-all duration-1000 w-full grid col-span-2 dashboard-button shadow"
             />
           </div>
-        <Navbar />
       </main>
       ) : (
         <Quiz showQuiz={showQuiz} />
       )}
+      <Navbar />
     </>
   );
 };
