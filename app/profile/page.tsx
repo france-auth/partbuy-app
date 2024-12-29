@@ -17,9 +17,9 @@ const profileoverview = [
 
 const Profile = () => {
   return (
-    <main className="page">
+    <main className="page fade-in">
       <Header name="Profile" />
-      <div className="box w-full mx-auto space-y-3">
+      <div className="box w-full mx-auto space-y-3 mt-16">
         <Image 
           src={'/profile/pfp.svg'} alt="pfp" 
           width={1} 
@@ -69,7 +69,7 @@ const Profile = () => {
           </p>
           <Button
             name="edit profile"
-            link="/profile/edit"
+            link="/settings"
             className="property-button border-[#3246DA]"
           />
         </div>
