@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import { useState } from "react";
 import Image from "next/image";
+import Button from "@/components/ui/Button";
 
 const invitesteps = [
   {
@@ -17,6 +18,25 @@ const invitesteps = [
   {
     step: 3,
     desc: 'You will both get token rewards when your friends successfully makes their first purchase'
+  },
+]
+
+interface FriendsListProps {
+  pfp: string;
+  userName: string;
+  reward: string;
+}
+
+const friendslist: FriendsListProps[] = [
+  {
+    pfp: '/referral/pfp.svg',
+    userName: 'Ryan Backroom',
+    reward: '$500'
+  },
+  {
+    pfp: '/referral/pfp.svg',
+    userName: 'John Doe',
+    reward: '$650'
   },
 ]
 
@@ -103,10 +123,10 @@ const Referral = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col text-wrap w-full space-y-2 roboto mt-14">
+      {friends === 'invite' ? (<div className="fade-in flex flex-col text-wrap w-full space-y-2 roboto mt-14">
         {invitesteps.map(({ step, desc }, id) => (
           <div key={id} className="w-full flex justify-start gap-3 items-center">
-            <div className="flex justify-center items-center w-10 h-10 text-base leading-[28.13px] font-medium rounded-full p-[10px] bg-cust-gradient">
+            <div className="flex flex-shrink-0 justify-center items-center w-12 h-12 text-base leading-[28.13px] font-medium rounded-full p-[10px] bg-cust-gradient">
               <p className="text-gradient text-center">{step}</p>
             </div>
             <div className="flex">
@@ -114,7 +134,38 @@ const Referral = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div>) : friends === 'friends' ? (
+        <div className="fade-in w-full flex flex-col space-y-4 roboto mt-14">
+          <div className="box">
+            <p className="top-text">friends list</p>
+          </div>
+          <div className="w-full space-y-1">
+            {friendslist.map(({ pfp, userName, reward }, id) => (
+              <div key={id} className="flex gap-3 py-2.5 px-6 bg-cust-gradient border border-[#3246DA]">
+                <Image 
+                  src={pfp}
+                  width={1}
+                  height={1}
+                  alt="pfp image"
+                  quality={100}
+                  className="w-14 h-auto"
+                />
+                <div className="w-full montserrat text-color font-bold text-xs leading-[12.19px] flex flex-col gap-2 justify-center items-start">
+                  <p>{userName}</p>
+                  <p>{reward}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : null}
+      <Button
+        name="Refer a friend by text, email or more"
+        src="/tutorial/rocket.svg"
+        width={15}
+        height={15}
+        className="referral-button mt-2"
+      />
       <Navbar />
     </main>
   );

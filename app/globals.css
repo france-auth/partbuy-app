@@ -65,6 +65,9 @@
   .auction-button {
     @apply flex text-[8px] leading-[9.38px] py-[6px] px-2 border-[#3246DA] rounded-full border border-solid roboto justify-items-center w-max
   }
+  .referral-button {
+    @apply montserrat px-3 py-3 rounded-full hover:border hover:border-[#3246DA] bg-[#3246DA] hover:bg-[#FFFFFF1A] text-[10px] leading-[12.19px] font-bold
+  }
   .top-text {
     @apply roboto uppercase font-bold text-xs leading-[14.06px] text-color text-start
   }
