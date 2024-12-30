@@ -27,7 +27,7 @@ const Auction = () => {
       <div className="">
         {/* Pass the selected filter to the Header */}
         <Header name="Auction" filter={selectedFilterHead} marketplace="Exit Marketplace" />
-        <div className="flex justify-between header w-screen">
+        <div className="flex justify-between header mt-16 w-screen">
           <p className="text-gradient roboto font-bold leading-[18.75px]">Basic Plan</p>
           <div className="flex gap-2">
             <Link href={'/marketplace/tier'} className="w-9 h-auto">
