@@ -265,8 +265,8 @@ export const tierimages: TierImagesProps[] = [
   {img: bronze, nexttTier: "Silver Tier", tier: "bronze"},
   {img: silver, nexttTier: "Gold Tier", tier: "silver"},
   {img: gold, nexttTier: "Platinum Tier", tier: "gold"},
-  {img: diamond, nexttTier: "Diamond Tier", tier: "platinum"},
-  {img: platinum, nexttTier: "None", tier: "diamond"},
+  {img: diamond, nexttTier: "Diamond Tier", tier: "diamond"},
+  {img: platinum, nexttTier: "None", tier: "platinum"},
 ]
 
 export const tokens: string[] = [
