@@ -532,7 +532,7 @@ export const levels: Level[] = [
         },
         { 
           text: 'interactive element', 
-          description: 'Take a Myth-buusting quiz'
+          description: 'Take a Myth-busting quiz'
         },
         { 
           text: 'it is too complicated', 
@@ -603,7 +603,7 @@ export const levels: Level[] = [
         },
         { 
           text: 'interactive element', 
-          description: 'Video Introduction to Parybuy'
+          description: 'Video Introduction to Partbuy'
         },
         { 
           text: 'what it partbuy?', 
@@ -2508,7 +2508,7 @@ export const quizCards: QuizCard[] = [
           id: 1,
           question: "What is smart contract?",
           options: [
-            "A contract thata requuires a lawyer",
+            "A contract that requires a lawyer",
             "A self-executing contract with terms written in code",
             "A type of rental agreement",
           ],

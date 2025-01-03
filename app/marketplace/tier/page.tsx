@@ -40,7 +40,7 @@ const Tier = () => {
   };
 
   return (
-    <main className="page">
+    <main className="page fade-in">
       <Header name="Tiers" marketplace="Exit Marketplace" />
       <div className="flex flex-col w-full gap-4 mt-16">
         {/* Current Tier Section */}

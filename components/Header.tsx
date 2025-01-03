@@ -10,6 +10,7 @@ interface HeaderProp {
   cardIndex?: number; // Card index
   marketplace?: string;
   filter?: string;
+  className?: string;
   summary?: boolean; // Determines summary mode
 }
 
@@ -20,6 +21,7 @@ const Header: React.FC<HeaderProp> = ({
   cardIndex, 
   marketplace, 
   filter, 
+  className = '',
   summary 
 }) => {
   const params = useParams(); // Access dynamic route parameters
@@ -38,7 +40,7 @@ const Header: React.FC<HeaderProp> = ({
 
   // Default header content
   return (
-    <div className="header fixed">
+    <div className={`header fixed ${className}`}>
       {/* Dynamic title logic */}
       <p className="roboto font-bold text-gradient text-base leading-[18.75px]">
         {filter

@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const Analytics = () => {
   return (
-    <main className="page">
+    <main className="page fade-in">
       <Header name="Analytics Overview" />
-      <div className="w-full flex flex-col gap-4">
+      <div className="w-full flex flex-col gap-4 mt-16">
           {analytics.map(({heading, img}, id) => (
             <div key={id} className="box gap-3">
               <p className="top-text">{heading}</p>

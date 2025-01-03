@@ -11,7 +11,7 @@ const PropertyDetails = () => {
   const propertyId = params?.id;
 
   return (
-    <main className="page">
+    <main className="page  fade-in">
       <Header id={Number(propertyId)} />
       <div className="box w-full gap-3 mb-3">
         <p className="top-text">

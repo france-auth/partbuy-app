@@ -20,9 +20,9 @@ const AllProperties = () => {
   };
 
   return (
-    <main className="page">
+    <main className="page fade-in">
         <Header name="Available Properties" />
-        <div className="box roboto mt-2 gap-2">
+        <div className="box roboto mt-16 gap-2">
           <div className="flex items-center justify-between">
             <p className="top-text">
               all available properties

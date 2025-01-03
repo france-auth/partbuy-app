@@ -23,7 +23,7 @@ const Auction = () => {
   };
 
   return (
-    <main className="page">
+    <main className="page fade-in">
       <div className="">
         {/* Pass the selected filter to the Header */}
         <Header name="Auction" filter={selectedFilterHead} marketplace="Exit Marketplace" />

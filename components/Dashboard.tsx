@@ -21,7 +21,7 @@ const Dashboard = () => {
   };
   
   return (
-    <main className="page">
+    <main className="page fade-in">
       <Header name="Dashboard" />
       <div className="page-body">
         <div className="w-full flex justify-between items-center px-2 xr:p-3">

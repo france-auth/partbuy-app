@@ -18,7 +18,7 @@ const ProfileForm: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center justify-center text-color">
+    <div className="flex items-center justify-center text-color fade-in">
       <form className="w-full max-w-md space-y-7 py-6 rounded-lg shadow-lg montserrat">
         {/* Profile Picture */}
         <div>

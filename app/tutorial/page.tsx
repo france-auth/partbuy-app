@@ -8,7 +8,7 @@ import Headers from "@/components/Header";
 
 const Tutorial = () => {
   return (
-    <main className="page">
+    <main className="page fade-in">
       <Headers name="Tutorials" />
       <div className="box text-color grid grid-cols-2 gap-6 mt-16">
         {Array.from({ length: 10 }, (_, tutorialIndex) => {
