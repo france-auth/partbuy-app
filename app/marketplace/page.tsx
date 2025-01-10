@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Header from "@/components/Header";
 import Button from "@/components/ui/Button";
+import { useState, useEffect } from "react";
 
 const properties = [
   {
@@ -73,7 +73,7 @@ const Marketplace = () => {
 
   const handleHover = () => setIshovered(true);
   const handleOut = () => setIshovered(false);
-
+  
   // Function to handle tab click
   const handleTabClick = (index: number) => {
     setActiveTab(index);

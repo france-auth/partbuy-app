@@ -1,3 +1,4 @@
+import { challenge1, challenge2, challenge3, challenge4, challenge5, challenge6, challenge7, challenge8, challenge9, challenge10 } from "@/public/challenges";
 import { bronze, diamond, gold, platinum, silver } from "@/public/tier";
 import { level1, level2, level3, level4, level5, level6, level7, level8, level9, level10 } from "@/public/tutorial";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
@@ -345,6 +346,9 @@ export const benefits = [
 interface Tutorials {
   img: StaticImport
 }
+interface Challenges {
+  img: StaticImport
+}
 export const tutorials: Tutorials[] = [
   {
     img: level1
@@ -375,6 +379,38 @@ export const tutorials: Tutorials[] = [
   },
   {
     img: level10
+  },
+]
+export const challenges: Challenges[] = [
+  {
+    img: challenge1
+  },
+  {
+    img: challenge2
+  },
+  {
+    img: challenge3
+  },
+  {
+    img: challenge4
+  },
+  {
+    img: challenge5
+  },
+  {
+    img: challenge6
+  },
+  {
+    img: challenge7
+  },
+  {
+    img: challenge8
+  },
+  {
+    img: challenge9
+  },
+  {
+    img: challenge10
   },
 ]
 
