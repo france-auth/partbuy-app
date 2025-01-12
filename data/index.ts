@@ -349,6 +349,7 @@ interface Tutorials {
 interface Challenges {
   img: StaticImport
 }
+
 export const tutorials: Tutorials[] = [
   {
     img: level1
@@ -2317,21 +2318,84 @@ export const levels: Level[] = [
     ],
   },
 ] 
-/* 
-export const quizzes = [
+
+
+interface QuizQuestion {
+  question: string;
+  options: string[];
+  correctAnswer: number;
+}
+
+interface InputChallengeData {
+  prompt: string;
+  answer: string;
+}
+
+interface DragAndDropData {
+  items: { id: string; content: string }[];
+  correctOrder: string[];
+}
+
+type TutorialData = 
+  | { type: "quiz"; data: QuizQuestion[] }
+  | { type: "input"; data: InputChallengeData }
+  | { type: "drag-and-drop"; data: DragAndDropData };
+
+interface Tutorial {
+  title: string;
+  type: "quiz" | "input" | "drag-and-drop";
+  data: TutorialData["data"];
+}
+
+interface Challenge {
+  level: number;
+  tutorials: Tutorial[];
+}
+
+
+export const challengequestions: Challenge[] = [
   {
-    topics: [
-      [{topic: 'reinforce learning through an interactive quiz'}],
-      [{topic: 'reinforce learning through an interactive quiz'}],
-      [{topic: 'reinforce learning through an interactive quiz'}],
-      [{topic: 'reinforce learning through an interactive quiz'}],
-      [{topic: 'reinforce learning through an interactive quiz'}],
+    level: 1,
+    tutorials: [
+      {
+        title: "Quiz Challenge",
+        type: "quiz",
+        data: [
+          { question: "What is 2 + 2?", options: ["3", "4", "5"], correctAnswer: 1 },
+          { question: "What is the capital of France?", options: ["Berlin", "Paris", "London"], correctAnswer: 1 },
+        ],
+      },
+      {
+        title: "Input Challenge",
+        type: "input",
+        data: { prompt: "Enter your name", answer: "John Doe" },
+      },
+      {
+        title: "Drag and Drop Challenge",
+        type: "drag-and-drop",
+        data: {
+          items: [
+            { id: "1", content: "First" },
+            { id: "2", content: "Second" },
+          ],
+          correctOrder: ["2", "1"],
+        },
+      },
     ],
-    questions: [
-      [{options: ''}]
-    ]
-  }
-] */
+  },
+  {
+    level: 2,
+    tutorials: [
+      {
+        title: "Another Quiz",
+        type: "quiz",
+        data: [
+          { question: "What is 5 x 5?", options: ["20", "25", "30"], correctAnswer: 1 },
+        ],
+      },
+    ],
+  },
+];
 
 
   interface Question {

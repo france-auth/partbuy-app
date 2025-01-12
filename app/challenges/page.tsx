@@ -22,7 +22,7 @@ const Challenges = () => {
                 Challenge {challengeIndex + 1}
               </p>
               {/* Tutorial Image */}
-              <Link href={`/tutorial/${challengeIndex + 1}/level/1`} 
+              <Link href={`/challenges/${challengeIndex + 1}/task/1`} 
                 className="grid justify-items-center pt-2 pb-2 w-full mx-auto cursor-pointer">
                 <Image
                   src={challenges[challengeIndex].img}
